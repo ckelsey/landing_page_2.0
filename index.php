@@ -2,16 +2,13 @@
 <?php include 'inc/template_start.php'; ?>
 <?php include 'inc/page_head.php'; ?>
 
-<div id="home-carousel" class="carousel carousel-home slide" data-ride="carousel" data-interval="5000">
-    <div class="carousel-inner">
-        <div class="active item home-img-background">
-            <section class="site-section site-section-light site-section-top ">
-                <div class="container">
-                    <h1 class="text-center animation-slideDown home-hdr mt-neg20"><strong>IT’S TIME TO CLAIM WHAT’S YOURS.</strong></h1>
-                    <h2 class="text-center text-theme-dark-navy animation-slideUp push home-hdr mt-neg5"><strong>File more, collect more. Easy peasy.</strong></h2>
-                </div>
-            </section>
-        </div>
+<div id="home-carousel">
+    <div class="active item">
+        <section class="site-section site-section-light site-section-top home-hdr">
+            <div class="container">
+                <h1 class="text-center text-theme-dark-navy animation-slideDown home-hdr mt-neg20"><strong>Isn't it time someone fixed Class Actions?</strong></h1>
+            </div>
+        </section>
     </div>
 </div>
 <section class="site-content site-section">
@@ -25,17 +22,17 @@
 <section id="howitworks" class="site-content site-section site-slide-content">
     <div class="container pt50">
         <div class="row">
-            <div class="col-sm-6 site-block visibility-none" data-toggle="animation-appear" data-animation-class="animation-fadeInRight" data-element-offset="-180">
+            <div class="col-sm-6 site-block visibility-none img-mt-110" data-toggle="animation-appear" data-animation-class="animation-fadeInRight" data-element-offset="-180">
                 <img src="/img/FindFileFund.png" alt="How it Works" class="img-responsive rounded-corners">
             </div>
             <div class="col-sm-6 col-md-5 col-md-offset-1 site-block visibility-none mt-neg50 m-mt-none" data-toggle="animation-appear" data-animation-class="animation-fadeInLeft" data-element-offset="-180">
-                <h3 class="site-heading site-heading-promo">
+                <h3 class="h2 site-heading site-heading-promo">
                     <span class="text-theme-dark-navy">
-                        <strong>How Does <em>Class Action Inc.</em>, Work?</strong>
+                        <strong>How It Works</strong>
                     </span>
                 </h3>
                 <p class="promo-content">
-                    Class Action, Inc. keeps track of hundreds of settlements. Then Clarence—our robot chat bear—asks you simplified questions. Answer them honestly and Clarence will fill out your forms, file them, and keep you up to date on any expected payments. 
+                    After determining which settlements you’re eligible for, our automated system files the relevant paperwork, and sends you payments as settlement funds are distributed. We deduct a five percent success fee from these payments, so there’s no need to charge sign-up or subscription fees. We truly hope to earn your trust for years to come, but if you have a change of heart, you’ll be able to leave at the drop of a hat. 
                     <a id="moreinfo" href="#">Learn More..</a>
                 </p>
             </div>
@@ -47,12 +44,12 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-md-5 mt20 site-block visibility-none" data-toggle="animation-appear" data-animation-class="animation-fadeInRight" data-element-offset="-180">
-                <h3 class="h2 site-heading site-heading-promo"><strong>Hundreds</strong> of Settlements, <strong>Billions</strong> in unclaimed funds.</h3>
+                <h3 class="h2 site-heading site-heading-promo"><strong>New settlements every week</strong></h3>
                 <p class="promo-content">
-                    Class action suits empower consumers to push back against unfair corporate practices. The traditional way of filing can be complicated and time-consuming. By using technology to streamline the process, we make filing easy! That means you can file more claims at a time, and collect more payments. Learn more in our <a href="/faq/">Blog</a>
+                Each year, between $8 and $20 Billion US dollars are put into escrow for several hundred class action settlements. Ranging from a few million to several billion dollars each, these settlements serve as a means to hold corporate and government interests accountable, reinforce and empower individual consumer rights, whilst reducing pressure on an increasingly overburdened court system.
                 </p>
             </div>
-            <div class="col-sm-6 col-md-offset-1 site-block visibility-none" data-toggle="animation-appear" data-animation-class="animation-fadeInLeft" data-element-offset="-180">
+            <div class="col-sm-6 col-md-offset-1 site-block visibility-none img-mt-40" data-toggle="animation-appear" data-animation-class="animation-fadeInLeft" data-element-offset="-180">
                 <img src="img/unclaimed.png" alt="Unclaimed Class Action Monies" class="img-responsive rounded-corners">
             </div>
         </div>
@@ -62,13 +59,13 @@
 <section id="charity" class="site-content site-section site-slide-content">
     <div class="container pt60">
         <div class="row">
-            <div class="col-sm-6 site-block visibility-none" data-toggle="animation-appear" data-animation-class="animation-fadeInRight" data-element-offset="-180">
+            <div class="col-sm-6 site-block visibility-none img-mt-50" data-toggle="animation-appear" data-animation-class="animation-fadeInRight" data-element-offset="-180">
                 <img src="img/DonateSm.png" alt="Placeholder" class="img-responsive rounded-corners center-img">
             </div>
             <div class="col-sm-6 col-md-5 col-md-offset-1 site-block visibility-none" data-toggle="animation-appear" data-animation-class="animation-fadeInLeft" data-element-offset="-180">
-                <h3 class="h2 site-heading site-heading-promo mt-neg40 m-mt-none"><strong>Charity</strong></h3>
+                <h3 class="h2 site-heading site-heading-promo mt-neg40 m-mt-none"><strong>Donate Your Claims</strong></h3>
                 <p class="promo-content">
-                Class Action Inc. has partnered with multiple charities so you can pay it forward and help others in need. Donate your payments easily by accessing your account. Every little bit helps!
+                At your preference, Class Action can donate your claims to a charity of your choosing. By working with charity partners across the country, we not make not only a simpler, more transparent legal system, but also stronger and more resilient communities.
                 </p>
             </div>
         </div>
@@ -79,12 +76,13 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-md-5 site-block visibility-none" data-toggle="animation-appear" data-animation-class="animation-fadeInRight" data-element-offset="-180">
-                <h3 class="h2 site-heading site-heading-promo"><strong>Who we are</strong></h3>
+                <h3 class="h2 site-heading site-heading-promo"><strong>About Us</strong></h3>
                 <p class="promo-content">
-                Clarence has gathered a small and passionate team of humans from across the globe! We all believe in restoring balance and getting consumers what they’re owed.
+                Class Action, Inc. consists of a small team of legal enthusiasts with a reasonable amount of software expertise and just enough optimism to believe they can make a difference.
+                By increasing notoriously low claims rates, and increasing access to justice - we aim to empower those best suited to protect consumer rights; the consumers themselves.
                 </p>
             </div>
-            <div class="col-sm-6 col-md-offset-1 site-block visibility-none" data-toggle="animation-appear" data-animation-class="animation-fadeInLeft" data-element-offset="-180">
+            <div class="col-sm-6 col-md-offset-1 site-block visibility-none img-mt-50" data-toggle="animation-appear" data-animation-class="animation-fadeInLeft" data-element-offset="-180">
                 <img src="img/image02.jpg" alt="Promo #4" class="img-responsive rounded-corners">
             </div>
         </div>
@@ -103,7 +101,7 @@
             <div class="carousel-inner text-center">
                 <div class="active item">
                     <p>
-                        <img src="img/avatars/2.jpg" alt="Avatar" class="img-circle mw-128">
+                        <img src="img/avatars/22.jpg" alt="Avatar" class="img-circle mw-128">
                     </p>
                     <blockquote class="no-symbol">
                         <p>Clarence IS cute, and I defy anyone to tell me different!</p>
@@ -112,7 +110,7 @@
                 </div>
                 <div class="item">
                     <p>
-                        <img src="img/avatars/25.jpg" alt="Avatar" class="img-circle mw-128">
+                        <img src="img/avatars/32.jpg" alt="Avatar" class="img-circle mw-128">
                     </p>
                     <blockquote class="no-symbol">
                         <p>THANK YOU! It is a pleasure to chat with Clarence because many AI robots do not work properly, and Clarence is much more helpful than many actual people that I have talked with.</p>
@@ -121,7 +119,7 @@
                 </div>
                 <div class="item">
                     <p>
-                        <img src="img/avatars/4.jpg" alt="Avatar" class="img-circle mw-128">
+                        <img src="img/avatars/81.jpg" alt="Avatar" class="img-circle mw-128">
                     </p>
                     <blockquote class="no-symbol">
                         <p>I file all my class action claims online. It has really been worth it, in my opinion</p>
@@ -130,7 +128,7 @@
                 </div>
                 <div class="item">
                     <p>
-                        <img src="img/avatars/3.jpg" alt="Avatar" class="img-circle mw-128">
+                        <img src="img/avatars/16.jpg" alt="Avatar" class="img-circle mw-128">
                     </p>
                     <blockquote class="no-symbol">
                         <p>Thank you for your help!</p>
@@ -141,7 +139,7 @@
         </div>
     </div>
 </section>
-<section class="site-content site-section site-section-light themed-background-extra-dark">
+<!--<section class="site-content site-section site-section-light themed-background-extra-dark">
     <div class="container">
         <h3 class="site-heading text-center text-theme-yellow"><strong>Sign Up Today</strong> and find your <strong>unclaimed money</strong>!</h3>
         <div class="site-block text-center">
@@ -160,7 +158,7 @@
             </form>
         </div>
     </div>
-</section>
+</section>-->
 <section class="site-content site-section themed-background-default">
     <div class="container">
         <div class="row" id="counters">

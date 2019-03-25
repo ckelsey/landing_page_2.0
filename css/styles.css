@@ -222,12 +222,10 @@ header {
 
 .home-img-background {
   width: 100%;
-  height: 80vh;
-  background-size:100vw 80vh;
-  background-repeat: no-repeat;
-  background-image: url("/img/Tempheader.png");
-  background-color: #2c98c9;
-  image-rendering: crisp-edges;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .center-img {
@@ -243,6 +241,37 @@ header {
   cursor: pointer;
 }
 
+section.home-hdr {
+  height: 75vh;
+  background-color: #FFF;
+}
+
+.img-mt-40 {
+  margin-top: 40px !important;
+}
+
+.img-mt-50 {
+  margin-top: 50px !important;
+}
+
+.img-mt-110 {
+  margin-top: 110px !important;
+}
+
+@media (max-width: 450px) {
+  .img-mt-40 {
+    margin-top: 0px !important;
+  }
+
+  .img-mt-50 {
+    margin-top: 0px !important;
+  }
+
+  .img-mt-110 {
+    margin-top: 0px !important;
+  }
+}
+
 @media (max-width: 768px) {
   .home-img-background {
     max-width: 100%;
@@ -254,12 +283,11 @@ header {
   } 
 
   .home-hdr {
-    font-size: 15px;
     margin-top: 0px;
   }
 
   .home-hdr.mt-neg20 {
-    margin-top: 20% !important;
+    margin-top: 30% !important;
   }
 
   .site-section {
