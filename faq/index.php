@@ -5,7 +5,7 @@
 <section class="site-section site-section-light site-section-top themed-background-default">
     <div class="container">
         <h1 class="text-center animation-slideDown"> <strong>FAQ</strong></h1>
-        <!-- <h2 class="h3 text-center animation-slideUp">Some of the frequent!</h2> -->
+        <h2 class="h3 text-center animation-slideUp">Frequently Asked Questions</h2>
     </div>
 </section>
 <section class="site-content site-section">
@@ -22,7 +22,7 @@
               </p>
               
               <b>How do I receive claim money?</b>
-              <p>Most class actions have a court-ordered 'distribution schedule'. Once we receive payment from the settlement administrator, we deduct a 5% transaction fee (per our <a href="https://classactioninc.com/#useragreement">user agreement</a>), and send the rest of the payment to you either in the form of a physical check or ACH bank transfer.</p>
+              <p>Most class actions have a court-ordered 'distribution schedule'. Once we receive payment from the settlement administrator, we deduct a 5% transaction fee (per our <a id="footerUserAgree" href="javascript:void(0)">user agreement</a>), and send the rest of the payment to you either in the form of a physical check or ACH bank transfer.</p>
 
               <b>How much money will I receive?</b>
               <p>Every class action lawsuit is different, and final payment amounts can depend on a variety of court rulings and other factors. Your payments can range from a few dollars to many thousands - it really just depends on the individual settlement. Of course, we'll do everything we can to ensure you have the most up to date information on how much to expect, when to expect it, and any other factors which might influence the value of your claim, or your rights as a class member - and if you ever have specific questions, simply send us a note and we'll do what we can to help.</p>
@@ -36,7 +36,7 @@
               (Note: As a company, this is also why we've chosen not accept offers of investment from litigators on the plaintiffs or defense bar. We're in this for the long run.)</p>
               
               <b>What does this service cost?</b>
-              <p>It's free to join and maintain an active subscription, and we deduct a 5% transaction fee from settlement distributions collected on your behalf. For example, if you have $100 in claim-value, we'll send a $95 check (or bank transfer) as the settlement is distributed. There are no other fees, and if we ever DO change in this the future (though we have no plans to do so) we promise to tell you long in advance. You can read more about this fee in our <a href="https://classactioninc.com/#useragreement">user agreement</a>.</p>
+              <p>It's free to join and maintain an active subscription, and we deduct a 5% transaction fee from settlement distributions collected on your behalf. For example, if you have $100 in claim-value, we'll send a $95 check (or bank transfer) as the settlement is distributed. There are no other fees, and if we ever DO change in this the future (though we have no plans to do so) we promise to tell you long in advance. You can read more about this fee in our <a id="footerUserAgree" href="javascript:void(0)">user agreement</a>.</p>
 
               <b>Do you know about this lawsuit?</b>
               <p>If you're aware of an existing class action lawsuit and you’re looking for more information, we’d be happy to help where we can! Simply send the name of the lawsuit (or any other details you have) to our support staff at <a href="mailto:support@classactioninc.com">support@classactioninc.com</a>. They’ll research the settlement and get back to you with what we can find. (Please be patient, there are many thousands of class actions each year, many of them going on for over a decade... we promise to respond sooner than that though - usually within 48 hours.)</p>

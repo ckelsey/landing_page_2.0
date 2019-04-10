@@ -32,10 +32,6 @@ $primary_nav = array(
         'url'   => '/#charity'
     ),
     array(
-        'name'  => 'FAQ',
-        'url'   => '/faq/'
-    ),
-    array(
         'name'  => 'Contact',
         'url'   => '/contact/'
     )
