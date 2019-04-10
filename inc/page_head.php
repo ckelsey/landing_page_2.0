@@ -80,7 +80,7 @@
                             <?php foreach ($link['sub'] as $sub_link) {
                                 $link_class = '';
                                 $li_active = '';
-
+                                echo $sub_link;
                                 // Get 2nd level link's vital info
                                 $url        = (isset($sub_link['url']) && $sub_link['url']) ? $sub_link['url'] : '#';
                                 $active     = (isset($sub_link['url']) && ($template['active_page'] == $sub_link['url'])) ? 'active' : '';
@@ -98,6 +98,19 @@
                     </li>
                     <?php } 
                     
+                    ?>
+                    <li>
+                    <a href="javascript:void(0)" class="site-nav-sub">Support<i class="fa fa-angle-down site-nav-arrow"></i></a>
+                        <ul>
+                            <li>
+                                <a href="/faq/">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="/ticket/">ZenDesk Ticket</a>
+                            </li>
+                        </ul>
+                    </li>   
+                    <?php
                     if(!isset($sessionActive)) {
                     ?>
                     <li>
