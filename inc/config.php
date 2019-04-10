@@ -25,11 +25,15 @@ $primary_nav = array(
     ),
     array(
         'name'  => 'Blog',
-        'url'   => '/faq/'
+        'url'   => '/blog/'
     ),
     array(
         'name'  => 'Charity',
         'url'   => '/#charity'
+    ),
+    array(
+        'name'  => 'FAQ',
+        'url'   => '/faq/'
     ),
     array(
         'name'  => 'Contact',
