@@ -27,7 +27,7 @@ $email = isset($queryStr) ? base64_decode($queryStr) : '';
                             </div>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group loginUI animation-pullDown">
                         <div class="col-xs-12">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="fa fa-lock"></i></span>
@@ -37,13 +37,16 @@ $email = isset($queryStr) ? base64_decode($queryStr) : '';
                     </div>
                     <div class="form-group form-actions">
                         <div class="col-xs-6">
-                            <label class="switch switch-primary">
-                                <input type="checkbox" id="login-remember-me" name="login-remember-me" checked><span></span>
-                            </label>
-                            <small>Remember me</small>
+                            <div class="loginUI animation-pullDown">
+                                <label class="switch switch-primary">
+                                    <input type="checkbox" id="login-remember-me" name="login-remember-me" checked><span></span>
+                                </label>
+                                <small>Remember me</small>
+                            </div>
                         </div>
                         <div class="col-xs-6 text-right">
-                            <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-arrow-right"></i> Log In</button>
+                            <button id="theButton" type="submit" class="btn btn-sm btn-primary"><i class="fa fa-arrow-right"></i> Login</button>
+                            <input type="hidden" id="uiFlag" value="0">
                         </div>
                     </div>
                     <div class="form-group">
@@ -51,8 +54,9 @@ $email = isset($queryStr) ? base64_decode($queryStr) : '';
                     </div>
                 </form>
                 <div class="text-center">
-                <a href="/signup/?<?= $queryStr ?>"><strong>Don't have an account?</strong></a>
-                    <a href="javascript:void(0)" class="ml50"><strong>Forgot password?</strong></a>
+                    <a href="/signup/?<?= $queryStr ?>"><strong>Don't have an account?</strong></a>
+                    <a id="reset-pass" href="javascript:void(0)" class="ml50 loginUI"><strong>Forgot password?</strong></a>
+                    <a id="login-pass" href="javascript:void(0)" class="ml50 hidden resetUI"><strong>Login</strong></a>
                 </div>
             </div>
         </div>

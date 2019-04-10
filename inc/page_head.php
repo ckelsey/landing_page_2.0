@@ -104,11 +104,28 @@
                         <a href="/login/" class="btn btn-primary">Log In</a>
                     </li>
                     <li>
-                        <a href="/signup/" class="btn btn-success btn-alt">Sign Up</a>
+                        <a href="/clarence/" class="btn btn-success btn-alt">Sign Up</a>
                     </li>
                     <?php } else { ?>
                     <li>
-                        <a href="#">My Account</a>
+                        <?php
+                        if(isset($_SESSION['FULLNAME'])) {
+                        ?>
+                        <a href="javascript:void(0)" class="site-nav-sub"><?= $_SESSION['FULLNAME'] ?><i class="fa fa-angle-down site-nav-arrow"></i></a>
+                        <ul>
+                            <li>
+                                <a href="/clarence/?<?= base64_encode("bptkn=" . $_SESSION['TOKEN']) ?>">Find Settlements</a>
+                            </li>
+                            <li>
+                                <a href="/claims/listing/">My Claims</a>
+                            </li>
+                            <li>    
+                                <a href="/logout/">Logout</a>    
+                            </li>
+                        </ul>
+                        <?php } else { ?>
+                            <a href="/logout/">Logout</a>
+                        <?php } ?>
                     </li>
                     <?php } ?>
                 </ul>

@@ -30,7 +30,9 @@ var Login = function() {
                         email: true
                     },
                     'login-password': {
-                        required: true,
+                        required: function(element) {
+                            return $("#uiFlag").val() == 0;
+                        },
                         minlength: 5
                     }
                 },
@@ -42,25 +44,57 @@ var Login = function() {
                     }
                 },
                 submitHandler: function(form) {
-                    console.log('here')
-                    App.postData('login.php', JSON.stringify({
-                        email: $('#login-email').val(),
-                        pass: $('#login-password').val()
-                    }), true, $('#errorDisp')).then(data => {
-                        $('#errorDisp').text('Login successful...').removeClass('alert-danger hidden').addClass('alert-success');
-                        let queryStr = 'bptkn=' + data.token;
-                        let url = "/clarence/?" + window.btoa(queryStr);
-                        window.location.href = url;
+                    if($('#uiFlag').val() == 0) {
+                        App.postData('login.php', JSON.stringify({
+                            email: $('#login-email').val(),
+                            pass: $('#login-password').val()
+                        }), true, $('#errorDisp')).then(data => {
+                            $('#errorDisp').text('Login successful...').removeClass('alert-danger hidden').addClass('alert-success');
+                            let queryStr = 'bptkn=' + data.token;
+                            let url = "/clarence/?" + window.btoa(queryStr);
+                            window.location.href = url;
 
-                        //probably won't every execute, but just in case...
-                        setTimeout(function() {
-                            $('#errorDisp').text('').addClass('hidden');
-                        }, 4000);
-                    }).catch(data => {
-                        console.log(data);
-                    });
+                            //probably won't every execute, but just in case...
+                            setTimeout(function() {
+                                $('#errorDisp').text('').addClass('hidden');
+                            }, 4000);
+                        }).catch(data => {
+                            console.log(data);
+                        });
+                    } else {
+                        App.postData('reset.php', JSON.stringify({
+                            email: $('#login-email').val()
+                        }), true, $('#errorDisp')).then(data => {
+                            $('#errorDisp').text(data.msg).removeClass('alert-danger hidden').addClass('alert-success');
+                        }).catch(data => {
+                            console.log(data);
+                        });
+                    }
                 }
             });
+        },
+        toggleUI: function(use) {
+            if(use === 'reset') {
+                $('.loginUI').addClass('hidden');
+                $('.resetUI').removeClass('hidden');
+                $('#theButton').text(' Reset Password');
+                $('#uiFlag').val('1');
+            } else {
+                $('.loginUI').removeClass('hidden');
+                $('.resetUI').addClass('hidden');
+                $('#theButton').text(' Log In');
+                $('#uiFlag').val('0');
+            }
         }
     };
 }();
+
+$('#reset-pass').on('click', (e) => {
+    e.preventDefault();
+    Login.toggleUI('reset');
+});
+
+$('#login-pass').on('click', (e) => {
+    e.preventDefault();
+    Login.toggleUI('login');
+});

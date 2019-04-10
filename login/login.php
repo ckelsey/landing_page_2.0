@@ -17,6 +17,13 @@ if(isset($loginDetails)) {
   $loginJson = json_decode($loginData);
 
   if($loginJson->result) {
+    if(!isset($_SESSION)) { session_start(); }
+    $_SESSION['EMAIL'] = $loginDetails->email;
+    $_SESSION['LAST_ACTIVITY'] = time();
+    $_SESSION['CREATED'] = time();
+    $_SESSION['USERID'] = $loginJson->uid;
+    $_SESSION['TOKEN'] = $loginJson->token;
+
     http_response_code(200);
     header('Content-type: text/json');
     echo '{"token":"' . $loginJson->token . '"}';

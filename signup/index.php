@@ -17,6 +17,7 @@ $email = isset($queryStr) ? base64_decode($queryStr) : '';
     <div class="container">
         <div class="row pt30 pb60">
             <div class="col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4 site-block">
+                <div id="errorDisp" class="alert alert-danger mtn10 mb10 hidden"></div>
                 <form id="form-sign-up" class="form-horizontal">
                     <div class="form-group">
                         <div class="col-xs-12 col-md-6">

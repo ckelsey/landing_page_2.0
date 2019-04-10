@@ -31,7 +31,7 @@ include ROOT . '/page_head.php';
 
 <section class="site-section site-section-light site-section-top themed-background-default">
   <div class="container">
-    <h1 class="text-center animation-slideDown"><strong>Frequently Asked Questions</strong></h1>
+    <h1 class="text-center animation-slideDown"><strong>Our Blog</strong></h1>
     <h2 class="h3 text-center animation-slideUp">Learn more about class actions and how we can help!</h2>
   </div>
 </section>

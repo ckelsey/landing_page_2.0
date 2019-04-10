@@ -701,7 +701,7 @@ a:hover,
 a:focus,
 .text-primary,
 .text-primary:hover {
-    color: #1bbae1;
+    color: #2c9bc9;
 }
 
 .text-danger,
@@ -1331,8 +1331,8 @@ fieldset[disabled] .btn-danger.active:focus {
 }
 
 .btn-warning {
-    background-color: #f7be64;
-    border-color: #f39c12;
+    background-color: #e1b35f;
+    border-color: #e1b35f;
     color: #ffffff;
 }
 
@@ -1342,8 +1342,8 @@ fieldset[disabled] .btn-danger.active:focus {
 }
 
 .btn-warning:hover {
-    background-color: #f39c12;
-    border-color: #b3730c;
+    background-color: #e1b35f;
+    border-color: #e1b35f;
     color: #ffffff;
 }
 
@@ -1796,7 +1796,7 @@ fieldset[disabled] .btn-info.active:focus {
 /* Pagination & Pager */
 .pagination > li > a,
 .pagination > li > span  {
-    color: #1bbae1;
+    color: #2c9bc9;
     margin-left: 5px;
     margin-right: 5px;
     border: none !important;
@@ -1809,7 +1809,7 @@ fieldset[disabled] .btn-info.active:focus {
 .pagination > .active > span:hover,
 .pagination > .active > a:focus,
 .pagination > .active > span:focus {
-    background-color: #1bbae1;
+    background-color: #2c9bc9;
     font-weight: 600;
 }
 
@@ -1820,8 +1820,8 @@ fieldset[disabled] .btn-info.active:focus {
 
 .pager > li > a:hover,
 .pagination > li > a:hover {
-    background-color: #1bbae1;
-    border-color: #1bbae1;
+    background-color: #2c9bc9;
+    border-color: #2c9bc9;
     color: #ffffff;
 }
 
@@ -1949,6 +1949,12 @@ p, .table, .alert, .carousel {
 
 .remove-margin {
     margin-bottom: 0;
+}
+
+.dataTables_paginate .remove-margin {
+    margin-bottom: 0;
+    margin-top: 0;
+    float: right;
 }
 
 .lt-ie10 .hidden-lt-ie10 {
@@ -2088,7 +2094,7 @@ p, .table, .alert, .carousel {
     }
 
     .site-nav ul a:hover {
-        background-color: #eeeeee;
+        background-color: #25274d;
     }
 
     .site-nav ul a.active,

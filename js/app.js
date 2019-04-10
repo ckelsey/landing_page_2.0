@@ -131,9 +131,34 @@ var App = function() {
         });
     };
 
+    /* Datatables basic Bootstrap integration (pagination integration included under the Datatables plugin in plugins.js) */
+    var dtIntegration = function() {
+        $.extend(true, $.fn.dataTable.defaults, {
+            "sDom": "<'row'<'col-sm-4 col-xs-3'><'col-sm-8 col-xs-9'<'pull-right'>>r>t",
+            "sPaginationType": "bootstrap",
+            "oLanguage": {
+                "sLengthMenu": "_MENU_",
+                "sSearch": "<div class=\"input-group pull-right\">_INPUT_<span class=\"input-group-addon\"><i class=\"fa fa-search\"></i></span></div>",
+                "sInfo": "<strong>_START_</strong>-<strong>_END_</strong> of <strong>_TOTAL_</strong>",
+                "oPaginate": {
+                    "sPrevious": "",
+                    "sNext": ""
+                }
+            }
+        });
+        $.extend($.fn.dataTableExt.oStdClasses, {
+            "sWrapper": "dataTables_wrapper form-inline",
+            "sFilterInput": "form-control",
+            "sLengthSelect": "form-control"
+        });
+    };
+
     return {
         init: function() {
             uiInit(); // Initialize UI Code
+        },
+        datatables: function() {
+            dtIntegration(); // Datatables Bootstrap integration
         },
         postData: function(url, data, showErrors, errorMsgDOM, contentType = 'application/json', headers = {}) {
             return new Promise((resolve, reject) => {

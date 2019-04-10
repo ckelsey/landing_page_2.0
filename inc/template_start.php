@@ -1,12 +1,13 @@
 <?php
-/**
- * template_start.php
- *
- * Author: pixelcave
- *
- * The first block of code used in every page of the template
- *
- */
+if(!isset($_SESSION)) { session_start(); }
+
+if(isAnyUserLoggedIn()) {
+    $sessionActive = true;
+} else if(strpos($_SERVER["SCRIPT_FILENAME"],'/claims/listing') !== false) {
+    header("Location:/login/");
+    exit();
+}
+
 ?>
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="no-js lt-ie10" lang="en"> <![endif]-->

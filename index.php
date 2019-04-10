@@ -4,17 +4,20 @@
 
 <div id="home-carousel">
     <div class="active item">
-        <section class="site-section site-section-light site-section-top home-hdr">
+        <section class="site-section site-section-light site-section-top home-hdr pb0">
             <div class="container">
-                <h1 class="text-center text-theme-dark-navy animation-slideDown home-hdr mt-neg20"><strong>Isn't it time someone fixed Class Actions?</strong></h1>
+                <!--<h1 class="text-center text-theme-dark-navy animation-slideDown home-hdr mt-neg20"><strong>Isn't it time someone fixed Class Actions?</strong></h1>-->
+                <div class="hdr-img-container">
+                    <img src="img/Header_005_Fixed.png" class="img-responsive">
+                </div>
             </div>
         </section>
     </div>
 </div>
-<section class="site-content site-section">
+<section class="site-content site-section pt0">
     <div class="container">
         <div class="site-block text-center">
-            <a href="/signup/" class="btn btn-lg btn-success btn-alt">Get Started</a>
+            <a href="/clarence/" class="btn btn-lg btn-success btn-alt">Get Started</a>
         </div>
         <hr>
     </div>
@@ -22,7 +25,7 @@
 <section id="howitworks" class="site-content site-section site-slide-content">
     <div class="container pt50">
         <div class="row">
-            <div class="col-sm-6 site-block visibility-none img-mt-110" data-toggle="animation-appear" data-animation-class="animation-fadeInRight" data-element-offset="-180">
+            <div class="col-sm-6 site-block visibility-none img-mt-40" data-toggle="animation-appear" data-animation-class="animation-fadeInRight" data-element-offset="-180">
                 <img src="/img/FindFileFund.png" alt="How it Works" class="img-responsive rounded-corners">
             </div>
             <div class="col-sm-6 col-md-5 col-md-offset-1 site-block visibility-none mt-neg50 m-mt-none" data-toggle="animation-appear" data-animation-class="animation-fadeInLeft" data-element-offset="-180">
@@ -32,7 +35,7 @@
                     </span>
                 </h3>
                 <p class="promo-content">
-                    After determining which settlements you’re eligible for, our automated system files the relevant paperwork, and sends you payments as settlement funds are distributed. We deduct a five percent success fee from these payments, so there’s no need to charge sign-up or subscription fees. We truly hope to earn your trust for years to come, but if you have a change of heart, you’ll be able to leave at the drop of a hat. 
+                    Our simple system finds what you’re eligible for, files the paperwork, and sends you payments as they’re distributed. A five percent transaction fee makes it possible to offer our service with no signup or subscription fees, and we’ll never sell your data.
                     <a id="moreinfo" href="#">Learn More..</a>
                 </p>
             </div>
@@ -46,7 +49,7 @@
             <div class="col-sm-6 col-md-5 mt20 site-block visibility-none" data-toggle="animation-appear" data-animation-class="animation-fadeInRight" data-element-offset="-180">
                 <h3 class="h2 site-heading site-heading-promo"><strong>New settlements every week</strong></h3>
                 <p class="promo-content">
-                Each year, between $8 and $20 Billion US dollars are put into escrow for several hundred class action settlements. Ranging from a few million to several billion dollars each, these settlements serve as a means to hold corporate and government interests accountable, reinforce and empower individual consumer rights, whilst reducing pressure on an increasingly overburdened court system.
+                Between $8 and $20 Billion US dollars are put into escrow for several hundred class action settlements. Ranging from a few million to several billion dollars each, these settlements serve as a means to hold corporate and government interests accountable, reinforce and empower individual consumer rights, whilst reducing pressure on an increasingly overburdened court system.
                 </p>
             </div>
             <div class="col-sm-6 col-md-offset-1 site-block visibility-none img-mt-40" data-toggle="animation-appear" data-animation-class="animation-fadeInLeft" data-element-offset="-180">
@@ -87,9 +90,9 @@
             </div>
         </div>
     </div>
-    <hr class="w60pct">
+    <!--<hr class="w60pct">-->
 </section>
-<section class="site-content site-section">
+<!--<section class="site-content site-section">
     <div class="container">
         <div id="testimonials-carousel" class="carousel slide carousel-html" data-ride="carousel" data-interval="4000">
             <ol class="carousel-indicators">
@@ -138,7 +141,7 @@
             </div>
         </div>
     </div>
-</section>
+</section>-->
 <!--<section class="site-content site-section site-section-light themed-background-extra-dark">
     <div class="container">
         <h3 class="site-heading text-center text-theme-yellow"><strong>Sign Up Today</strong> and find your <strong>unclaimed money</strong>!</h3>
