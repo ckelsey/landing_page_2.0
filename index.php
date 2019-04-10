@@ -26,7 +26,7 @@
     <div class="container pt50">
         <div class="row">
             <div class="col-sm-6 site-block visibility-none img-mt-40" data-toggle="animation-appear" data-animation-class="animation-fadeInRight" data-element-offset="-180">
-                <img src="/img/FindFileFund.png" alt="How it Works" class="img-responsive rounded-corners">
+                <img src="/img/FIND.FILE.FUND.png" alt="How it Works" class="img-responsive rounded-corners">
             </div>
             <div class="col-sm-6 col-md-5 col-md-offset-1 site-block visibility-none mt-neg50 m-mt-none" data-toggle="animation-appear" data-animation-class="animation-fadeInLeft" data-element-offset="-180">
                 <h3 class="h2 site-heading site-heading-promo">
@@ -53,7 +53,7 @@
                 </p>
             </div>
             <div class="col-sm-6 col-md-offset-1 site-block visibility-none img-mt-40" data-toggle="animation-appear" data-animation-class="animation-fadeInLeft" data-element-offset="-180">
-                <img src="img/unclaimed.png" alt="Unclaimed Class Action Monies" class="img-responsive rounded-corners">
+                <img src="img/Website.png" alt="Unclaimed Class Action Monies" class="img-responsive rounded-corners">
             </div>
         </div>
         <hr>
