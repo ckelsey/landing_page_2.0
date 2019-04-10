@@ -1405,6 +1405,17 @@ fieldset[disabled] .btn-warning.active:focus {
     color: #fff;
 }
 
+.btn-success.btn-start {
+    background-color: #f9bb2d;
+    color: #fff;
+}
+
+.btn-success.btn-start:hover {
+    background-color: #e2950f;
+    /* border-color: #25274d; */
+    color: #fff;
+}
+
 .btn-success:hover {
     background-color: #7db831;
     border-color: #578022;

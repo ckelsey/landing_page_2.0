@@ -67,16 +67,16 @@ $email = isset($queryStr) ? base64_decode($queryStr) : '';
     <div class="container">
         <div class="row row-items text-center">
             <div class="col-sm-6 animation-fadeIn">
-                <a href="/contact/" class="circle themed-background">
+                <a href="/ticket/" class="circle themed-background">
                     <i class="gi gi-life_preserver"></i>
                 </a>
                 <h4>Need <strong>Help</strong>?</h4>
             </div>
             <div class="col-sm-6 animation-fadeIn">
-                <a href="mailto:hello@classactionapp.com" class="circle themed-background">
+                <a href="/contact/" class="circle themed-background">
                     <i class="gi gi-envelope"></i>
                 </a>
-                <h4><strong>Email</strong> Us</h4>
+                <h4><strong>Contact</strong> Us</h4>
             </div>
         </div>
     </div>

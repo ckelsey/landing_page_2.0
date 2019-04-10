@@ -38,4 +38,12 @@
     $('#legal-text-userAgree').removeClass('hidden');
     $('#legal-modal').modal();
   });
+
+  $('#footerUserAgreement').on('click', (e) => {
+    $('.modal-header h2').addClass('hidden');
+    $('#legal-modal .modal-body div').addClass('hidden');
+    $('#legal-userAgree-title').removeClass('hidden');
+    $('#legal-text-userAgree').removeClass('hidden');
+    $('#legal-modal').modal();
+  });
 </script>

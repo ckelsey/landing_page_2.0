@@ -8,7 +8,7 @@
             <div class="container">
                 <!--<h1 class="text-center text-theme-dark-navy animation-slideDown home-hdr mt-neg20"><strong>Isn't it time someone fixed Class Actions?</strong></h1>-->
                 <div class="hdr-img-container">
-                    <img src="img/Header_005_Fixed.png" class="img-responsive">
+                    <img src="img/MeetClarence.png" class="img-responsive">
                 </div>
             </div>
         </section>
@@ -17,7 +17,7 @@
 <section class="site-content site-section pt0">
     <div class="container">
         <div class="site-block text-center">
-            <a href="/clarence/" class="btn btn-lg btn-success btn-alt">Get Started</a>
+            <a href="/clarence/" class="btn btn-lg btn-success btn-start">Get Started</a>
         </div>
         <hr>
     </div>
