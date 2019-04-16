@@ -28,10 +28,6 @@ $primary_nav = array(
         'url'   => '/blog/'
     ),
     array(
-        'name'  => 'Charity',
-        'url'   => '/#charity'
-    ),
-    array(
         'name'  => 'Contact',
         'url'   => '/contact/'
     )

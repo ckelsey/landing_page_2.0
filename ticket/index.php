@@ -15,16 +15,17 @@
                 
             </div>
             <div class="col-sm-6 col-md-8 site-block">
-                <h3 class="h2 site-heading"><strong>Ticket</strong> Form</h3>
+                <h3 class="h3 site-heading"><strong>Submit a support ticket</strong> and we will get back to you soon.</h3>
                 <form action="#" id="form-ticket">
                     <div class="form-group">
                         <label for="ticket-type">Create a Ticket</label>
                         <select id="ticket-type" name="ticket-type" class="form-control input-lg">
-                            <option></option>
+                            <option>Select a support category</option>
                             <option>Help with a Claim</option>
                             <option>Password Reset</option>
                             <option>Edit Account Details</option>
                             <option>Problems with Website</option>
+                            <option>Other/Ask a Question</option>
                         </select>
                     </div>
                     <div class="form-group">

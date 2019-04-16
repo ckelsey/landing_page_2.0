@@ -41,45 +41,37 @@
               <b>Do you know about this lawsuit?</b>
               <p>If you're aware of an existing class action lawsuit and you’re looking for more information, we’d be happy to help where we can! Simply send the name of the lawsuit (or any other details you have) to our support staff at <a href="mailto:support@classactioninc.com">support@classactioninc.com</a>. They’ll research the settlement and get back to you with what we can find. (Please be patient, there are many thousands of class actions each year, many of them going on for over a decade... we promise to respond sooner than that though - usually within 48 hours.)</p>
 
-              <br/><br/>
-
-
               <b>Can I update my account information?</b>
               <p>Of course! Email us with the changes you would like to make, or tell Clarence you'd like to edit your information and he’ll help you make the changes manually.</p>
 
               <b>How can I get in contact with you?</b>
               <p>You can always reach out to us over the phone by calling 1 (888) 557-3885 or by emailing <a href="mailto:support@classactionapp.com">support@classactionapp.com</a>. Our physical address is 2777 Alvarado St. Suite E, San Leandro, CA 94577 (We love mail!)</p>
-              <br/><br/>
-
 
               <b>What if I filed a claim elsewhere?</b>
               <p>Unfortunately, if you don't file your claim with us, we're unable to look up its status. You'll have to contact the settlement administrator directly to do that. You can likely find their contact information online, or on postcard or email notices they have sent you.</p>
 
               <b>Can I cancel my account?</b>
               <p>We're more than happy to cancel your account at any time. The only limitation is that if you’ve already submitted claims through our service then we will need your express permission to invalidate and delete your claim information as well. If you would still like to cancel your account, you can reach out to support staff at support@classactioninc.com and tell them that you would like to cancel your account and delete all claims filed through our service. (If you do decide to do this, we hope you'll tell us why!)</p>
-              <br/><br/>
 
 
               <b>Why do I need your company / service?</b>
               <p>You don't, of course! That said, monitoring thousands of lawsuits a year and turning mountains of dense legalese into plain language keeps our modest-sized team pretty gosh darn busy... We've been told our product is useful 'simply for the awareness factor', though we like to believe the work we invest into minimizing physical paper filings, aggregating payments, and educating consumers about their rights is useful, too.</p>
-              <br/>
 
 
               <b>What does suing do to prevent corporate wrongdoing?</b>
               <p>A number of studies have looked into this very question (we'll be making a list of these soon!). Generally speaking, we believe as long as consumer rights are cheaper to abuse than protect, that a ( generally small) percentage of companies will continue do so.<br/>
               The resultant harm to society is comes in two main forms; Direct harm to consumers and businesses connected to specific illegal activity, as well as the indirect (but very real) harm to legitimate businesses trying to compete on an uneven playing field. <br/>
               On a more personal note, our company aims to contribute to what free market capitalism aims to achieve by encouraging transparent law and corporate accountability... which we believe to be necessary in the pursuit and maintenance of a truly free marketplace.<br/></p>
-              <br/><br/>
+              
 
 
               <b>Is this a scam?</b>
               <p>Look, we understand why 'free money on the internet' sounds pretty suspicious. All you have to do is fill out an online form and you get free money? Sounds too good to be true! The reality is, however, that the money really isn't free. Every time you over-paid for a guarantee which under-delivered, or were charged for a service never provided, received unsolicited phone-calls without your consent, or were otherwise lied to, stolen from, or harmed by a large organization who stood to benefit by doing so... That's where the money comes from. We charge a five percent 'success fee' instead sign-up, subscription, or other kinds of fees, because we believe it's the most reliable way to ensure our interests are aligned with your own. (It also means there's no need for us to sell your data, which we do not and will never do!) It’s smart to be wary of websites that ask for your information, but our whole mission is about holding companies accountable, and we can’t do that if we’re acting in bad faith. If you trust us enough to look after our mutual interests in this small area of the world, we can promise we'll do our best to earn that trust in the years to come.</p>
-              <br/><br/>
 
 
               <b>So… are you lawyers?</b>
               <p>Nope - and we don't pretend to be lawyers on the internet! I mean, we have an attorney on the team… her name is Meg and she’s really nice! But we’re mostly just people helping other people find the money from class action lawsuits that they didn’t know they had. Oh - and a robot bear. We have one of those, too.</p>
-              <br/><br/>
+
 
             </div>
             

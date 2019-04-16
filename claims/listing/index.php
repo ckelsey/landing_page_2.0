@@ -55,27 +55,48 @@ if (strlen($userData) <= 0 || !isValidJSON($userData)) {
     } else {
       estValue = '$' + estPerItem.toLocaleString('en');
     }
-
+    console.log(idx);
+    let link="";
+    display = "";
+    if(sett.hasOwnProperty('settlement_doc_href')){
+      link = sett.settlement_doc_href;
+    }
+    else {
+      display = 'none';
+    }
+    
     data.push({
-      Settlement_Name: sett.settlement_name,
-      Claim_Date: formatStrToDteTimeStr(item.clientClaims.createTS),
-      Status: 'Filing Preparation',
+      Settlement_Name: sett.settlement_name+' <a href="'+link+'" target="_blank" style="display:'+display+'"><i class="fa fa-info-circle"></i></a>',
+      Filed_On: formatStrToDteTimeStr(item.clientClaims.createTS),
+      // Status: 'Filing Preparation',
       //final_approval_hearing: formatStrToDteTimeStr(sett.settlement_timeline.dateValue, true),
-      Estimated_Settlement_Amount: '$' + estValue.toLocaleString('en')
+      Estimated_Distribution_Date: '4/15/19',
+      Estimated_Value: '$' + estValue.toLocaleString('en')
     })
+    
   });
 
   $('#claims-listing').DataTable({
     data: data,
     columnDefs: [
-        { sClass: "text-center", targets: [3] },
+        { sClass: "text-center text-wrap", targets: [3] },
         { targets: '_all', orderable: true, createdCell: function (td, cellData, rowData, row, col) {
                 $(td).css('padding', '2px 10px')
+                if(col==2) {
+                  $(td).css('text-align', 'center')
+                }
             }
         }
     ],
     columns: Object.keys(data[0]).map(x => {
-        return {data:x, title: x.replace(/_/g," ")};
+        if (x === 'Estimated_Distribution_Date')
+        {
+          return {data:x, title: '<div class="text-center">Estimated <br/> Distribution Date</div>'};  
+        }
+        else {
+          return {data:x, title: x.replace(/_/g," ")};
+        }
+        
     })
   });
 
@@ -85,9 +106,11 @@ if (strlen($userData) <= 0 || !isValidJSON($userData)) {
     let temp = moment(strInput);
 
     if(bJustDate) {
-      return temp.format("MMM DD YYYY");
+      // return temp.format("MMM DD YYYY");
+      return temp.format("MM/DD/YY");
     } else {
-      return temp.format("MMM DD YYYY hh:mm:ss a");
+      // return temp.format("MMM DD YYYY hh:mm:ss a");
+      return temp.format("MM/DD/YY");
     }
   }
 

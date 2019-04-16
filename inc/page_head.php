@@ -9,6 +9,116 @@
  */
 ?>
 
+<script async src="//www.googletagmanager.com/gtag/js?id=UA-99628832-5"></script>
+<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-99628832-5', { 'send_page_view': false, 'anonymize_ip': true });</script>
+<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/db9cb1341159e67cd255c5f22/2b8777ff31190e1390c3ae53d.js");</script>
+<script>
+    function uuidv4() {
+        if(crypto) {
+            return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
+                (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
+            );
+        } else {
+            return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+                var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+                return v.toString(16);
+            });
+        }
+    }
+
+    var cai_uuid = uuidv4();
+    console.log(cai_uuid);
+
+    var uid = sessionStorage.getItem("uid");
+    if(uid===undefined || uid =='' || uid==null)
+    {
+        sessionStorage.setItem("uid",cai_uuid)
+        uid = sessionStorage.getItem("uid");
+    }
+    console.log(uid);
+    
+
+    async function getIP() {
+        try {
+            const resp = await window.fetch("https://ipinfo.io/json?token=d3923202237e4d");
+            let result = {};
+            if(resp) {
+                result = await resp.json();
+            }
+
+            let postData = {
+                url: encodeURI(window.location.href),
+                ip: result,
+                cai_uuid: uid,
+                userAgent: navigator.userAgent
+            };
+            
+            x = new XMLHttpRequest();
+            x.open('POST', 'https://webhooks.mongodb-stitch.com/api/client/v2.0/app/cai_auth-tgtyd/service/cai_svc_external/incoming_webhook/trafficGatekeeper?secret=7e5937bcf7cd23fd17e4');
+            x.send(JSON.stringify(postData));
+            x.onreadystatechange = function() {
+                if (x.readyState != 4) return;
+                console.log(x.status);
+            }
+        } catch(err) {
+            console.log(err);
+        }
+    }
+
+    if(!navigator.userAgent.match(/bot|spider/i)) {
+        getIP();
+    }
+    </script>
+    <!-- Bing UET -->
+    <script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"25042834"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    
+    fbq('init', '1565099903534179');
+    fbq('track', "PageView");</script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1565099903534179&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2223345544657552');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=2223345544657552&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    <script>
+        fbq('track', 'ViewContent', {
+        value: 0,
+        currency: 'USD',
+        });
+    </script>
+    <!-- DO NOT MODIFY -->
+    <!-- Quora Pixel Code (JS Helper) -->
+    <script>
+    !function(q,e,v,n,t,s){if(q.qp) return; n=q.qp=function(){n.qp?n.qp.apply(n,arguments):n.queue.push(arguments);}; n.queue=[];t=document.createElement(e);t.async=!0;t.src=v; s=document.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s);}(window, 'script', 'https://a.quora.com/qevents.js');
+    qp('init', 'f8e9573a85dd404b98f4cf2c60afeb37');
+    qp('track', 'ViewContent');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://q.quora.com/_/ad/f8e9573a85dd404b98f4cf2c60afeb37/pixel?tag=ViewContent&noscript=1"/></noscript>
+    <!-- End of Quora Pixel Code -->
+
+
 <!-- Page Container -->
 <!-- In the PHP version you can set the following options from inc/config file -->
 <!-- 'boxed' class for a boxed layout -->
@@ -106,7 +216,7 @@
                                 <a href="/faq/">FAQ</a>
                             </li>
                             <li>
-                                <a href="/ticket/">ZenDesk Ticket</a>
+                                <a href="/ticket/">Support Ticket</a>
                             </li>
                         </ul>
                     </li>   
@@ -117,7 +227,7 @@
                         <a href="/login/" class="btn btn-primary">Log In</a>
                     </li>
                     <li>
-                        <a href="/clarence/" class="btn btn-success btn-alt">Sign Up</a>
+                        <a href="/clarence/" class="btn btn-success btn-start">Sign Up</a>
                     </li>
                     <?php } else { ?>
                     <li>
