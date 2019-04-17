@@ -3,6 +3,13 @@ require("../../inc/config.php");
 
 include '../../inc/template_start.php';
 include '../../inc/page_head.php';
+
+if(isset($_SESSION['YODLEE'])) {
+	$yodleeUID = $_SESSION['YODLEE'];
+} else {
+	$yodleeUID = 'caitest01';    // <=== TESTING DEFAULT ONLY -- Setup session
+}
+
 ?>
 <style>
 	.panel.accnames{
@@ -21,18 +28,27 @@ include '../../inc/page_head.php';
 		color: #FFF;
 	}
 
+	#accountsListDiv {
+		max-height: 400px;
+		overflow-y: auto;
+	}
+
 	.panel-heading.active > a {
 		color: #FFF !important;
 	}
 
 	.table-responsive {
-		max-height:400px;
+		max-height:295px;
+		overflow-y: auto;
 	}
 </style>
 <section class="site-content site-section" style="height:820px;background:#FFF;">
 	<div class="container mt50">
 		<div class="row  justify-content-center">
-			<div id="loading_container" class="loading_no"></div>	
+			<div id="loading_container" class="loading_no"></div>		
+			<div class="col-md-12">
+				<h2 class="text-primary mb20"><strong>My Linked Accounts</strong></h2>
+			</div>
 			<!--Link-Accounts-->
 			<div class="col-md-3">
 				<div class="panel panel-primary">
@@ -73,7 +89,7 @@ include '../../inc/page_head.php';
 									<div class="panel panel-default ">
 										<div class="panel-heading accdetails">
 											<strong class="pull-left">Account Name :</strong>
-											<p class="pull-right" id="accountName">XXXXXXX</p>
+											<p class="pull-right mb0" id="accountName">XXXXXXX</p>
 										</div>
 
 									</div>
@@ -116,16 +132,16 @@ include '../../inc/page_head.php';
 								</div>
 							</div>
 
-							<hr>
+							<hr class="mb0">
 							<!--Transaction-Summary-->
 
 							<div class="row">
-								<div class="panel">
-									<div class="panel-heading">
-										<h4>Transaction Summary</h4>
+								<div class="panel mb0">
+									<div class="panel-heading pt0">
+										<h4 class="text-primary"><strong>Transaction Summary</strong></h4>
 
 									</div>
-									<div class="panel-body table-responsive">
+									<div class="panel-body table-responsive pt0">
 										<table class="table table-striped" id="txnTable">
 
 											<thead>
@@ -207,7 +223,7 @@ include '../../inc/page_head.php';
 		$("#accountType").text(type);
 		$("#accountName").text(name);
 		if(container!="insurance"){
-			$("#accountBalance").text(amount);
+			$("#accountBalance").text("$" + amount.toLocaleString('en'));
 		}
 
 		$("#accountContainer").text(container);
@@ -216,7 +232,7 @@ include '../../inc/page_head.php';
 		$('#emptyAccountDetailsDiv').addClass("hidden");
 		$('#accountDetailsDiv').removeClass("hidden");
 
-		$('#txnTable tbody').empty();
+		$('#txnTable tbody').remove();
 		$("#txnTable").append('<tbody><tr><td colspan="5" class="text-center"><div align="center" class="alert alert-info"><p>Loading Transactions....<i class="fa fa-spinner fa-spin" style="font-size:24px"></i></p></div></td></tr></tbody>');
 
 		$.get( "../YodleeSampleApp.php",{ action: "getTransactions",accountId:accountId} ).done(function( data ) {
@@ -225,7 +241,7 @@ include '../../inc/page_head.php';
 			var trHTML = '';
 			
 			$.each(responseObj.transaction, function (i, item) {
-					trHTML += '<tr><td>' + item.transactionDate + '</td><td class="text-right">' + item.amount.amount + '</td><td>' + item.category + '</td><td>' + item.description.simple + '</td><td>' + item.description.original + '</td></tr>';
+					trHTML += '<tr><td>' + formatStrToDteTimeStr(item.transactionDate) + '</td><td class="text-right">$' + item.amount.amount + '</td><td>' + item.category + '</td><td>' + (item.description.simple || '') + '</td><td>' + item.description.original + '</td></tr>';
 			});
 
 			//$('#txnTable tbody').empty();
@@ -247,6 +263,20 @@ include '../../inc/page_head.php';
 					});
 
 	}
+
+	function formatStrToDteTimeStr(strInput, bJustDate = false) {
+    if(strInput == null) { return ''; }
+
+    let temp = moment(strInput);
+
+    if(bJustDate) {
+      // return temp.format("MMM DD YYYY");
+      return temp.format("MM/DD/YY");
+    } else {
+      // return temp.format("MMM DD YYYY hh:mm:ss a");
+      return temp.format("MM/DD/YY");
+    }
+  }
 
 
 	$(document).ready(function(){
@@ -289,7 +319,7 @@ include '../../inc/page_head.php';
 			})
 
 			$('#loading_container').removeClass('loading_no').addClass('loading_yes');
-			$.post("../YodleeSampleApp.php",{ username:'sbMemoVpilckciKorG2'}).then(data => {    // <=== TESTING ONLY -- Setup session
+			$.post("../YodleeSampleApp.php",{ username:'<?= $yodleeUID ?>'}).then(data => {    
 				//Load user accounts in Sample Web App
 				$.get( "../YodleeSampleApp.php",{ action: "getAccounts"} )
 				.done(function( data ) {
@@ -323,11 +353,11 @@ include '../../inc/page_head.php';
 		$(element).parent().addClass('active');
 	}
 
-	$('#txnTable tbody').slimscroll({
+	/*$('#txnTable tbody').slimscroll({
 		height: '160px',
 		width: '100%',
 		alwaysVisible: true,
 		color: '#333'
-	})
+	})*/
 </script>
 <?php include '../../inc/template_end.php'; ?>

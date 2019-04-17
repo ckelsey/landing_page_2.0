@@ -11,7 +11,7 @@ $userData = CallAPI("POST", "https://webhooks.mongodb-stitch.com/api/client/v2.0
 //$json = json_decode(stripslashes(json_decode($userData)));
 //var_dump($json);
 
-if (strlen($userData) <= 0 || !isValidJSON($userData)) {
+if (strlen($userData) <= 0 || !isValidJSON($userData) || !$userData->claimData) {
   $bNoData = true;
 }
 
@@ -71,7 +71,7 @@ if (strlen($userData) <= 0 || !isValidJSON($userData)) {
       // Status: 'Filing Preparation',
       //final_approval_hearing: formatStrToDteTimeStr(sett.settlement_timeline.dateValue, true),
       Estimated_Distribution_Date: '4/15/19',
-      Estimated_Value: '$' + estValue.toLocaleString('en')
+      Estimated_Value: '$' + estValue.toLocaleString('en');
     })
     
   });
