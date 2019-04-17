@@ -11,7 +11,7 @@ $userData = CallAPI("POST", "https://webhooks.mongodb-stitch.com/api/client/v2.0
 //$json = json_decode(stripslashes(json_decode($userData)));
 //var_dump($json);
 
-if (strlen($userData) <= 0 || !isValidJSON($userData)) {
+if (strlen($userData) <= 0 || !isValidJSON($userData) || !$userData->claimData) {
   $bNoData = true;
 }
 

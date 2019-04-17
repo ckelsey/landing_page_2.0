@@ -19,30 +19,33 @@ $apiVersion=$ini_array["API_VERSION"];
 $allDataSet = "";
 
 $privateKey = <<<EOD
------BEGIN PRIVATE KEY-----
-MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCDBOubcZTkhb1OEK+iW++SdxSN
-+Mj1vFkZU1YYp4KWyGSX0KUcg8eB/xZJ+b1sBBzmrJP+jY6Ly7uQfh0+rafCyULWFPAoc+CpH2b2
-rRj9HFaywST2njJULG35vwmegIH1/jDPEi+5esw6KIKEpJA+gp+wG59x2oqVhtKbfcwBWaXFBQe2
-PfWyKbX2hNSecKFQBbFlr7rmnlRkm3yiXqKxFz5jOkld+W5U9pDj6iFOxVzWBKsKAKua/ilN1HKs
-z3K+1USbb95Iufv4tX19TbgqaOrtONps5WaI94NqaOlCbQaFQ65ShFluCQeNePqFPwbHVhNq5GZc
-KWIc8AkFw2w1AgMBAAECggEAewrk5U+Ov+oldSnQd86VN9yjLg1lVPn0RwdvhKnTxx0c80IbvaK4
-e4n++awTS1y1c6DBP77bDshfNnxppJJbSV/PZ9O0Epl4c/usq562KAY0GZ2vw/efVlN/WJsjQnp3
-EnkMh3sR3MPJBhlDMaSGXl4376CRZdASdAhww1wpeV3Jes9GVDKoJrLccZVpoJ4M1CAwqC8rIXdc
-YMou4ScljhhUgt2KdEVk/RymmPMaJTfV9hYw8hn4SZj2ZEP7PO2lmjDZQrkO2Bj57CBcRff2lN+0
-/5rr9f6NisaLzkrEau29Q77YwImKZURQ/wv7gm1yPzRsgov1ijpuK/TI3tGMgQKBgQDF+edjqsTW
-KdXXdJwlFlCIuKG+ZhRhsYUFPT8od+oUkiD4jwLKGoNE+RJaYGcgY7+++4ii/m/lZbvKxv0bY/ky
-XXmaSjtp2vfBAV/jTYBw5Loxvow0QFYs1RjxvS8gzGfP28NoZ5witXfc5IhHHwhlrKRxJtUan9+v
-s755vTeH4QKBgQCpa0EslqBus5XnULUsrAj2sgxPorTz2zUgyKxYT7cdjsFapFRCGZj8wV7SS0kw
-/cfwoFS6mYO2SI3EY9m+NbZeB4M9hm6EmqXgHqkZ3f5MkEwVS6ya7FTph0NtsKRy0MuCUNrgMXMe
-MqOVXk/cpYUedU/7+OWjjGecHWNnHQMe1QKBgHlAzOprLfFpYBJ81iGU4DBMvKuLg9It0qXZ1DPp
-9dExisYReQjlYh69WfNGdgMNdOP41L/XjBr4yyKv61d6TKb/PzozWt5DgViRifQChLcgL7XF2cMq
-4FzHC2cLkrDI4JAbLjxksOlFMat1wM2mgRMcwP6YZQ7QekT3lqKjND6hAoGAP1ELWYutx9GsK3gZ
-Tem5q+EdAsIvWJfLQkZdSt/38r8AekzCBLYmXAg01Ok4IGwoRkDViauH8x8ohIZAwXq3fmrWXK8a
-LMrTRXCQCE/UE282UBspFflPPrvDsoH648Iu3LQ1KOayPE32nwNRW4gsuRZk3ynFQRtfOZQuK0JH
-gUUCgYEAuxYRpLAUNP3ou/kqovpq9dOTdiR37s3/VJxycBqbqjiDaoBqVBHfjKXycNzerf6VuWvU
-fxkJLb5bM3PsZsiqluTSZSbp+Uqwg8DJeXelItsDCmdNtxdsYB+aPN4y4bZCbdlB1qD1rNFA+GyM
-pU2E3TDZuU74juMftgqPL6iqUWI=
------END PRIVATE KEY-----
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpQIBAAKCAQEAzdIJrneH+v6Wpuc7nS37sq6SF/xNAUBvY/c+4FTT0l5c9rXm
+CHPM6Epzzmh0LGmbc1qxoy8Mnol6k2mng3ih8GnUIctUvkwfStsz9bEESseTCo21
+ptlRMcmvQcthWzOfahTTGBOSjHHvmAcO+X2oktQ9RedhX+vlfSDd0pL2PVAnh29d
+sUMu4E6IPFCx5/DcilBPEh5RRzx9QmQ/RHBmC+BkTHCFD0S2hdSqeRprN7IBEyp5
+RJ+8iduenLF08ddAaqDEBDW/MHJJYRXMZ4BLN5/WSv1nlrVU3tvONVI1Tl1nbUoe
+gch/yOBsF4jNJzttNgoMQU3QoXKt+yvZcf+j1QIDAQABAoIBAQDNJ5ho5FKRmCU4
+lnJwmP4zPBj5eY6UOdMOVMvCtisxnMeTTvrM4AiWXmgSjUGHZ3kAwZ0hKGuutyCM
+QZsszBi21/YP/WoqCRyD8/1V4C2EEGx774bqmeF5/CwKLByN2OYEyl8jt5azEXqe
+EiMWAu/98zpkLF9+SlfEovcYx05VC339ZjZ96g4brnwau19pwgQsH1z8yB3mu/5h
+3UIoPUh7r72aymJviJiFQXjUZYU2TQJ3aAGMpyU7UizBGulk3l5+f1onEChR1EAp
+H3jv4oxiagqyz9OpP0zIlupxf5mJrkwLfaJQ3JyosXhor0yqUodqsrH+2k29rZY9
+RKeTT5ABAoGBAPr1F7euBLu6iDWR+mdJpEE60933M62fiUdEO2ASS/FG6d6Wg4jV
+M5AJZXptiapCP7wh0SA1sEmufemvFf44F41EPQj4TVPxFo6mtpdQmtOPfJhsUR1V
+Unrilgn6NV9x5tk5KkZS1YgNJYrMFEGF4wfh8TWKwy8Cjj+Q8OkDAeQBAoGBANH0
+w5ER2vIcrzzaJDczKd/AwkSMC8dJN3Dc0sEx6tSM8B8k222HiPgwbIvITvghGQae
+kKStmof7T6FAG8wAQQxmFWHR81bdko/uubmiyUgoBjjWrCuvHVSnfS/gbAscEiW4
+OApRxr7DeCEs87IUagsih9+JRAPS2e3XZwbtkO/VAoGBAKMgPdJ/o0QD9BYeVY5e
+KA7elmlqDoWFdk6E47OHMSYc2lh9rfJ745B1CymRmjK57YP012MAgx7h9aa40Kr2
++xgwixwRivJNfEQtyfKByqJKWssZXYCbvYlzT+QcaCUqfMwmhHxBy9sr8INQNLqC
+tRiinZAYKteb6asYJADSm6ABAoGAZCr1funY3nfm9w5QBvHnAXRyeseh+vMoezUv
+a7LICZ4wFXu9IHVwWJCpyMrJOkJ4MRtHgPm+Zy/0Hsd6O4rHfgXaH7BN+1x8xySr
+ATDz/PPze/yXacQDJ1c9N7FHeslqswo/2lSHkI2ra5CJt6VbrnJMBs7zXyuig4Go
+Crse0f0CgYEA8Y4mIzn1wQWyc2egE8EWsJuIS92gp7NWf/7wa4Hq+AQUMT1dBPGL
+LlcDI+MDU+gGaa0KN1ruh5S8Fy1qPDSnG4i0eK6fkRF7tddTlYO5t7cHVsAiwYyv
+aK0Y4ECevY/E2kjSuuFvNaCyrnPFU14jboGZBdE1jCrCiEco9RLWz7w=
+-----END RSA PRIVATE KEY-----
 EOD;
 
 //print_r($_GET);
@@ -51,42 +54,43 @@ if (isset($_GET["action"]) && !empty($_GET["action"]))
 {
     $action = $_GET["action"];
     $jwtToken=$_SESSION['jwtToken'];
-            if($jwtToken != null && strlen($jwtToken) > 0)
-            {
-                if($action === 'getAccounts')
-                {
-                    $getAccounts = getUserAccounts($linked_acc_url,$cobrand,$apiVersion,$jwtToken);
-                    header('Content-Type: application/json; charset=utf-8');
-                    echo json_encode($getAccounts);
+    //echo $jwtToken;
+    if($jwtToken != null && strlen($jwtToken) > 0)
+    {
+        if($action === 'getAccounts')
+        {
+            $getAccounts = getUserAccounts($linked_acc_url,$cobrand,$apiVersion,$jwtToken);
+            header('Content-Type: application/json; charset=utf-8');
+            echo json_encode($getAccounts);
 
-                }
-                if($action === 'getFastLinkToken')
-                {
+        }
+        if($action === 'getFastLinkToken')
+        {
 
-                    $data = ['jwtToken'=>$jwtToken,'nodeUrl'=>$node_url,'dataset'=>$allDataSet];
-                    header('Content-Type: application/json; charset=utf-8');
-                    echo json_encode($data);
+            $data = ['jwtToken'=>$jwtToken,'nodeUrl'=>$node_url,'dataset'=>$allDataSet];
+            header('Content-Type: application/json; charset=utf-8');
+            echo json_encode($data);
 
-                }
-                if($action === 'getTransactions')
-                {
-                    $accountId = $_GET['accountId'];
-                    $getTransactions = getTransactions($trans_url, $accountId,$cobrand,$apiVersion,$jwtToken);
-                    header('Content-Type: application/json; charset=utf-8');
-                    echo json_encode($getTransactions);
+        }
+        if($action === 'getTransactions')
+        {
+            $accountId = $_GET['accountId'];
+            $getTransactions = getTransactions($trans_url, $accountId,$cobrand,$apiVersion,$jwtToken);
+            header('Content-Type: application/json; charset=utf-8');
+            echo json_encode($getTransactions);
 
 
-                }
-                if($action === 'deleteAccount')
-                {
-                    $accountId = $_GET['accountId'];
-                    echo "this is the number of account:$accountId";
-                    $deleteAccount = deleteAccounts($linked_acc_url, $accountId,$cobrand,$apiVersion,$jwtToken);
-                    header('Content-Type: application/json; charset=utf-8');
-                    echo json_encode($deleteAccount);
+        }
+        if($action === 'deleteAccount')
+        {
+            $accountId = $_GET['accountId'];
+            echo "this is the number of account:$accountId";
+            $deleteAccount = deleteAccounts($linked_acc_url, $accountId,$cobrand,$apiVersion,$jwtToken);
+            header('Content-Type: application/json; charset=utf-8');
+            echo json_encode($deleteAccount);
 
-                }
-            }
+        }
+    }
 
 }
 if (isset($_POST) && !empty($_POST)) {
@@ -111,7 +115,7 @@ if (isset($_POST) && !empty($_POST)) {
     $jwtToken=$_SESSION['jwtToken'];
 
     $getAccounts = getUserAccounts($linked_acc_url, $cobrand,$apiVersion,$jwtToken);
-var_dump($getAccounts);
+//var_dump($getAccounts);
 
     if ($getAccounts!=null) {
 
@@ -151,7 +155,7 @@ var_dump($getAccounts);
 
 function getTransactions($url, $accountId,$cobrand,$apiVersion,$token)
 {
-    $newDate = date("Y-m-d", strtotime("-3 month"));
+    $newDate = date("Y-m-d", strtotime("-36 month"));
     //echo $newDate;
     $jwtToken= 'Authorization:'.$token ;
 
