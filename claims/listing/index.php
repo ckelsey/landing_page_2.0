@@ -43,7 +43,10 @@ if (strlen($userData) <= 0 || !isValidJSON($userData)) {
 
   $.each(claimData.claimData, function(idx, item) {
     let sett = claimData.settsData.find(x => x.settlement_id == item.settlement_id);
-
+    let edate = sett.settlement_timeline.find(x => x.dateName == 'Estimated Distribution Date');
+    console.log(edate);
+    if(edate==undefined)
+    { edate = 'TBD'; } 
     const estPerItem = sett.CAA_calculations.est_amt_per_item;
     const darFlag = sett.CAA_calculations.use_claimData_for_DAR;
     let estValue = '$0.00';
@@ -70,7 +73,7 @@ if (strlen($userData) <= 0 || !isValidJSON($userData)) {
       Filed_On: formatStrToDteTimeStr(item.clientClaims.createTS),
       // Status: 'Filing Preparation',
       //final_approval_hearing: formatStrToDteTimeStr(sett.settlement_timeline.dateValue, true),
-      Estimated_Distribution_Date: '4/15/19',
+      Estimated_Distribution_Date: edate,
       Estimated_Value: '$' + estValue.toLocaleString('en')
     })
     
