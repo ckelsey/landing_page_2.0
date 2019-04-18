@@ -54,7 +54,7 @@ $email = isset($queryStr) ? base64_decode($queryStr) : '';
                     </div>
                 </form>
                 <div class="text-center">
-                    <a href="/signup/?<?= $queryStr ?>"><strong>Don't have an account?</strong></a>
+                    <a href="/clarence/"><strong>Don't have an account?</strong></a>
                     <a id="reset-pass" href="javascript:void(0)" class="ml50 loginUI"><strong>Forgot password?</strong></a>
                     <a id="login-pass" href="javascript:void(0)" class="ml50 hidden resetUI"><strong>Login</strong></a>
                 </div>
