@@ -8,10 +8,11 @@ $userData = CallAPI("POST", "https://webhooks.mongodb-stitch.com/api/client/v2.0
   "user_id" => $_SESSION['UID']
 ));
 
-//$json = json_decode(stripslashes(json_decode($userData)));
-//var_dump($json);
+// $json = json_decode(stripslashes(json_decode($userData)));
+// var_dump($json);
+echo '<script>console.log('.$userData.')</script>';
 
-if (strlen($userData) <= 0 || !isValidJSON($userData) || !$userData->claimData) {
+if (strlen($userData) <= 0 || !isValidJSON($userData)) {
   $bNoData = true;
 }
 
@@ -47,6 +48,8 @@ if (strlen($userData) <= 0 || !isValidJSON($userData) || !$userData->claimData) 
     console.log(edate);
     if(edate==undefined)
     { edate = 'TBD'; } 
+    console.log(edate.dateValue);
+    let dateValue = edate.dateValue;
     const estPerItem = sett.CAA_calculations.est_amt_per_item;
     const darFlag = sett.CAA_calculations.use_claimData_for_DAR;
     let estValue = '$0.00';
@@ -73,7 +76,7 @@ if (strlen($userData) <= 0 || !isValidJSON($userData) || !$userData->claimData) 
       Filed_On: formatStrToDteTimeStr(item.clientClaims.createTS),
       // Status: 'Filing Preparation',
       //final_approval_hearing: formatStrToDteTimeStr(sett.settlement_timeline.dateValue, true),
-      Estimated_Distribution_Date: edate,
+      Estimated_Distribution_Date: formatStrToDteTimeStr(dateValue),
       Estimated_Value: '$' + estValue.toLocaleString('en')
     })
     

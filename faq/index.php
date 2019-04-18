@@ -45,7 +45,7 @@
               <p>Of course! Email us with the changes you would like to make, or tell Clarence you'd like to edit your information and he’ll help you make the changes manually.</p>
 
               <b>How can I get in contact with you?</b>
-              <p>You can always reach out to us over the phone by calling 1 (888) 557-3885 or by emailing <a href="mailto:support@classactionapp.com">support@classactionapp.com</a>. Our physical address is 2777 Alvarado St. Suite E, San Leandro, CA 94577 (We love mail!)</p>
+              <p>You can always reach out to us over the phone by calling 1 (888) 557-3885 or by emailing <a href="mailto:support@classactioninc.com">support@classactioninc.com</a>. Our physical address is 2777 Alvarado St. Suite E, San Leandro, CA 94577 (We love mail!)</p>
 
               <b>What if I filed a claim elsewhere?</b>
               <p>Unfortunately, if you don't file your claim with us, we're unable to look up its status. You'll have to contact the settlement administrator directly to do that. You can likely find their contact information online, or on postcard or email notices they have sent you.</p>
