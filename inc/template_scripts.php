@@ -14,6 +14,7 @@
 <script src="/js/vendor/bootstrap.min.js"></script>
 <script src="/js/plugins.js"></script>
 <script src="/js/app.js"></script>
+<script src="/js/vendor/anime.min.js"></script>
 <script>
   $('#footerTerms').on('click', (e) => {
     $('#legal-modal .modal-header h2').addClass('hidden');

@@ -2182,433 +2182,161 @@ only screen and (min-device-pixel-ratio: 1.5) {
 -------------------------------------------*/
 
 
-    @keyframes slidein {
-        0% {
-            left: 0px;
-        }
+#header-animation {
+    width: 100%;
+    height: 0px;
+    padding: 25% 0%;
+    position: relative;
+}
 
-        40% {
-            left: -5px;
-        }
+#header-animation-inner {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+}
 
-        100% {
-            left: 0px;
-        }
-    }
+.header-text-group {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-    @keyframes slideup {
-        0% {
-            margin-top: 0px;
-        }
+#header-text-group-1 {
+    width: 38%;
+    align-items: flex-end;
+    left: 0%;
+    opacity: 0;
+    pointer-events: none;
+}
 
-        40% {
-            margin-top: -10px;
-        }
+#header-text-group-2 {
+    width: 57%;
+    align-items: flex-start;
+    left: 43%;
+    pointer-events: none;
+}
 
-        100% {
-            margin-top: 0px;
-        }
-    }
+#header-text-group-3 {
+    width: 57%;
+    align-items: flex-start;
+    left: 43%;
+    pointer-events: none;
+}
 
-    #clarence-svg {
-        width: 95%;
-        height: 95%;
-        position: relative;
-        left: -4%;
-        top: 85%;
-        margin-top: -16px;
-    }
+#header-text-group-4 {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    left: 0%;
+    top: 0%;
+    pointer-events: none;
+}
 
-    #meet-clarence {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
+.header-text-item {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #25274d;
+    position: relative;
+}
 
-    #clarence-bubble {
-        width: 0vh;
-        height: 0vh;
-        background: #3c9bc9;
-        border-radius: 50%;
-        box-shadow: 0px 0px 0px 0px #25274d;
-        position: relative;
-        overflow: hidden;
-        top: 25%;
-        opacity: 0;
-        transition: all 0.4s ease-in-out 0.9s;
-    }
+#header-text-class {
+    color: #2c9bc9;
+    font-weight: 900;
+    font-size: 181%;
+    line-height: 85%;
+}
 
-    #meet-clarence-text {
-        position: relative;
-        font-size: 0rem;
-        margin: 0rem;
-        color: #25274d;
-        transition: all 0.4s ease-in-out 1s;
-    }
+#header-text-action {
+    color: #2c9bc9;
+    font-weight: 900;
+    font-size: 144%;
+    line-height: 85%;
+    transform-origin: 0% 0%;
+}
 
-    #clarence-text {
-        position: relative;
-        font-size: 0%;
-        transition: all 0.4s ease-in-out 0.97s;
-    }
+#header-text-inc {
+    color: #2c9bc9;
+    font-weight: 900;
+    font-size: 102%;
+    line-height: 85%;
+    transform-origin: 0% 0%;
+}
 
-    #header-get-started-button {
-        position: relative;
-        opacity: 0;
-        pointer-events: none;
-        margin: 0rem;
-        transition: all 0.4s ease-in-out 1.03s;
-    }
+#header-text-keeps {
+    font-weight: 100;
+    font-size: 80%;
+    line-height: 85%;
+    margin-top: 4%;
+}
 
-    #header-animations {
-        width: 100%;
-        height: 60vh;
-        position: relative;
-        padding-top: 7rem;
-        perspective: 800px;
-        transition: all 0.2s ease-in-out;
-    }
+#header-text-hundreds {
+    color: #f9bb2d;
+    font-weight: 900;
+    font-size: 134%;
+    line-height: 100%;
+    transform-origin: 0% 50%;
+}
 
-    .frame {
-        position: relative;
-        width: 100%;
-        height: 100%;
-    }
+#header-text-settlements {
+    font-weight: 800;
+    font-size: 113%;
+    line-height: 83%;
+    transform-origin: 0% 50%;
+}
 
-    .header-text {
-        margin: 0px;
-        font-size: 2rem;
-        display: block;
-        position: absolute;
-        opacity: 0;
-        transition: all 0.2s ease-in-out;
-    }
+#header-text-and {
+    font-weight: 100;
+    opacity: 0;
+}
 
-    #frame1-CAI1 {
-        font-size: 5rem;
-        font-weight: bold;
-        top: 5rem;
-        width: 100%;
-        text-align: center;
-        left: 0px;
-        color: #2c9bc9;
-        margin-left: -13rem;
-        transform: scale(0, 1);
-        transform-origin: right center;
-    }
+#header-text-helps {
+    font-weight: 900;
+    position: relative;
+}
 
-    #frame1-CAI2 {
-        font-size: 3.9rem;
-        font-weight: bold;
-        top: 9.5rem;
-        left: 0px;
-        width: 100%;
-        text-align: center;
-        color: #2c9bc9;
-        margin-left: -12.9rem;
-        transform: scale(0, 1);
-        transform-origin: right center;
-        transition: all 0.2s ease-in-out 0.1s;
-    }
+#header-text-determine {
+    opacity: 0;
+    color: #f9bb2d;
+    font-weight: 900;
+    transform-origin: 0% 50%;
+}
 
-    #frame1-CAI3 {
-        font-size: 2.6rem;
-        font-weight: bold;
-        top: 13.5rem;
-        left: 0px;
-        width: 100%;
-        text-align: center;
-        color: #2c9bc9;
-        margin-left: -8.5rem;
-        transform: scale(0, 1);
-        transform-origin: right center;
-        transition: all 0.2s ease-in-out 0.2s;
-    }
+#header-text-eligibility {
+    font-weight: 900;
+    opacity: 0;
+}
 
-    #frame1-tracks {
-        font-size: 2rem;
-        font-weight: lighter;
-        top: 7rem;
-        width: 100%;
-        text-align: center;
-        margin-left: 1.5rem;
-        transform: scale(0, 1);
-        transform-origin: 30% center;
-        transition: all 0.3s ease-in-out 0.3s;
-    }
+#clarence-header-svg-container {
+    position: relative;
+    height: 0px;
+    background: #2c9bc9;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 20%;
+    padding: 10% 0px;
+    border: 4px solid #25274d;
+}
 
-    #frame1-lawsuits {
-        font-size: 3.5rem;
-        top: 9rem;
-        width: 100%;
-        text-align: center;
-        margin-left: 3.1rem;
-        font-weight: normal;
-        color: #f9bb2d;
-        transform: scale(1, 1) rotate3d(1, 0, 0, -88deg);
-        transform-origin: 0% 0%;
-        transition: all 0.4s ease-in-out 0.5s;
-    }
+#clarence-header-svg {
+    position: absolute;
+    width: 96%;
+    height: 96%;
+    top: 12%;
+    left: 2%;
+}
 
-    #frame1-us {
-        font-size: 3.2rem;
-        top: 12.5rem;
-        width: 100%;
-        text-align: center;
-        margin-left: 7rem;
-        font-weight: bold;
-        color: #25274d;
-        transform: scale(1, 1) rotate3d(1, 0, 0, 88deg);
-        transform-origin: 0% 0%;
-        transition: all 0.4s ease-in-out 0.6s;
-    }
+#header-text-meet-clarence {
+    font-size: 80%;
+}
 
-    #frame1-gathers {
-        font-size: 2rem;
-        font-weight: lighter;
-        top: 6.7rem;
-        width: 100%;
-        text-align: center;
-        margin-left: -2.5rem;
-        transform: scale(0, 1);
-        transform-origin: right 0%;
-        transition: all 0.4s ease-in-out 0.9s;
-    }
+#header-text-clarence {
+    font-size: 50%;
+    padding-bottom: 2%;
+}
 
-    #frame1-info {
-        font-size: 2rem;
-        font-weight: bold;
-        top: 6.7rem;
-        width: 100%;
-        text-align: center;
-        margin-left: 2.5rem;
-        transform: scale(0, 1);
-        transform-origin: right 0%;
-        transition: all 0.4s ease-in-out 1s;
-    }
-
-    #frame1-on {
-        font-size: 3.5rem;
-        top: 8.7rem;
-        width: 100%;
-        text-align: center;
-        margin-left: 8.1rem;
-        font-weight: normal;
-        color: #f9bb2d;
-        transform: scale(0, 1);
-        transform-origin: right 0%;
-        transition: all 0.4s ease-in-out 0.8s;
-    }
-
-    #frame1-eligibility {
-        font-size: 3.5rem;
-        top: 12.2rem;
-        width: 100%;
-        text-align: center;
-        margin-left: 3.6rem;
-        font-weight: bold;
-        color: #25274d;
-        transform: scale(0, 1);
-        transform-origin: right 0%;
-        transition: all 0.4s ease-in-out 0.7s;
-    }
-
-
-    #header-animations[frame="0"] #frame1-CAI1,
-    #header-animations[frame="1"] #frame1-CAI1,
-    #header-animations[frame="2"] #frame1-CAI1,
-    #header-animations[frame="3"] #frame1-CAI1,
-    #header-animations[frame="4"] #frame1-CAI1 {
-        transform: scale(1, 1);
-        opacity: 1;
-    }
-
-    #header-animations[frame="0"] #frame1-CAI1 {
-        animation-duration: 0.2s;
-        animation-name: slidein;
-        animation-iteration-count: 1;
-        animation-delay: 0.2s;
-    }
-
-    #header-animations.showclarence #frame1-CAI1 {
-        transition: all 0.2s ease-in-out 1s;
-        transform-origin: center top;
-        transform: scale(1, 0);
-        opacity: 0;
-    }
-
-    #header-animations[frame="0"] #frame1-CAI2,
-    #header-animations[frame="1"] #frame1-CAI2,
-    #header-animations[frame="2"] #frame1-CAI2,
-    #header-animations[frame="3"] #frame1-CAI2,
-    #header-animations[frame="4"] #frame1-CAI2 {
-        transform: scale(1, 1);
-        opacity: 1;
-    }
-
-    #header-animations[frame="0"] #frame1-CAI2 {
-        animation-duration: 0.2s;
-        animation-name: slidein;
-        animation-iteration-count: 1;
-        animation-delay: 0.25s;
-    }
-
-    #header-animations.showclarence #frame1-CAI2 {
-        transition: all 0.1s ease-in-out 0.9s;
-        transform-origin: center center;
-        transform: scale(1, 0);
-        opacity: 0;
-    }
-
-    #header-animations[frame="0"] #frame1-CAI3,
-    #header-animations[frame="1"] #frame1-CAI3,
-    #header-animations[frame="2"] #frame1-CAI3,
-    #header-animations[frame="3"] #frame1-CAI3,
-    #header-animations[frame="4"] #frame1-CAI3 {
-        transform: scale(1, 1);
-        opacity: 1;
-    }
-
-    #header-animations.showclarence #frame1-CAI3 {
-        transition: all 0.2s ease-in-out 1s;
-        transform-origin: center bottom;
-        transform: scale(1, 0);
-        opacity: 0;
-    }
-
-    #header-animations[frame="0"] #frame1-CAI3 {
-        animation-duration: 0.2s;
-        animation-name: slidein;
-        animation-iteration-count: 1;
-        animation-delay: 0.4s;
-    }
-
-    #header-animations[frame="0"] #frame1-tracks,
-    #header-animations[frame="1"] #frame1-tracks {
-        transform: scale(1, 1) rotate3d(1, 0, 0, 0deg);
-        opacity: 1;
-    }
-
-    #header-animations[frame="0"] #frame1-tracks {
-        animation-duration: 0.2s;
-        animation-name: slidein;
-        animation-iteration-count: 1;
-        animation-delay: 0.4s;
-    }
-
-    #header-animations[frame="2"] #frame1-tracks {
-        animation-duration: 0.2s;
-        animation-name: slidein;
-        animation-iteration-count: 1;
-        animation-delay: 0.3s;
-    }
-
-    #header-animations[frame="2"] #frame1-tracks {
-        transform-origin: right center;
-        transform: scale(0, 1) rotate3d(1, 0, 0, 0deg);
-        opacity: 0;
-    }
-
-    #header-animations[frame="0"] #frame1-lawsuits,
-    #header-animations[frame="1"] #frame1-lawsuits {
-        transform: scale(1, 1) rotate3d(1, 0, 0, 0deg);
-        opacity: 1;
-    }
-
-    #header-animations[frame="2"] #frame1-lawsuits {
-        animation-duration: 0.2s;
-        animation-name: slidein;
-        animation-iteration-count: 1;
-        animation-delay: 0.4s;
-    }
-
-    #header-animations[frame="2"] #frame1-lawsuits {
-        transform-origin: right center;
-        transform: scale(0, 1) rotate3d(1, 0, 0, 0deg);
-        opacity: 0;
-    }
-
-    #header-animations[frame="0"] #frame1-us,
-    #header-animations[frame="1"] #frame1-us {
-        transform: scale(1, 1) rotate3d(1, 0, 0, 0deg);
-        opacity: 1;
-    }
-
-    #header-animations[frame="2"] #frame1-us {
-        animation-duration: 0.2s;
-        animation-name: slidein;
-        animation-iteration-count: 1;
-        animation-delay: 0.5s;
-    }
-
-    #header-animations[frame="2"] #frame1-us {
-        transform-origin: right center;
-        transform: scale(0, 1) rotate3d(1, 0, 0, 0deg);
-        opacity: 0;
-    }
-
-    #header-animations[frame="2"] #frame1-gathers,
-    #header-animations[frame="2"] #frame1-info,
-    #header-animations[frame="2"] #frame1-on,
-    #header-animations[frame="2"] #frame1-eligibility,
-    #header-animations[frame="3"] #frame1-gathers,
-    #header-animations[frame="3"] #frame1-info,
-    #header-animations[frame="3"] #frame1-on,
-    #header-animations[frame="3"] #frame1-eligibility {
-        transform-origin: right center;
-        transform: scale(1, 1);
-        opacity: 1;
-    }
-
-    #header-animations.showclarence #clarence-bubble {
-        width: 20vh;
-        height: 20vh;
-        min-width: 20vh;
-        min-height: 20vh;
-        max-width: 20vh;
-        max-height: 20vh;
-        box-shadow: 0px 0px 0px 5px #25274d;
-        top: 0px;
-        opacity: 1;
-        animation-duration: 0.2s;
-        animation-name: slideup;
-        animation-iteration-count: 1;
-        animation-delay: 1.2s;
-    }
-
-    #header-animations.showclarence #meet-clarence-text {
-        opacity: 1;
-        font-size: 4.65rem;
-        margin: 2rem 0rem 0rem;
-    }
-
-    #header-animations.showclarence #clarence-text {
-        opacity: 1;
-        font-size: 110%;
-    }
-
-    #header-animations.showclarence #header-get-started-button {
-        opacity: 1;
-        pointer-events: all;
-        margin: 2rem 0rem;
-    }
-
-    #header-animations.showclarence #clarence-svg {
-        width: 108%;
-        height: 108%;
-        top: 0%;
-        margin-top: 0px;
-        transition: width 0.4s ease-in-out 1.2s, height 0.4s ease-in-out 1.2s, top 0.45s ease-in-out 1.21s, margin-top 0.2s ease-in-out 1.5s;
-    }
-
-    #header-animations.showclarence.stop-animation #clarence-svg,
-    #header-animations.showclarence.stop-animation #clarence-bubble,
-    #header-animations.showclarence.stop-animation #meet-clarence-text,
-    #header-animations.showclarence.stop-animation #clarence-text,
-    #header-animations.showclarence.stop-animation #header-get-started-button {
-        transition: all 0.2s;
-    }
+#header-text-start-button a {
+    font-size: 50%;
+}
