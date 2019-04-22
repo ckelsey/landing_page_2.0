@@ -72,7 +72,7 @@ if (strlen($userData) <= 0 || !isValidJSON($userData)) {
     }
     
     data.push({
-      Settlement_Name: sett.settlement_name+' <a href="'+link+'" target="_blank" style="display:'+display+'"><i class="fa fa-info-circle"></i></a>',
+      Settlement_Name: sett.settlement_client_name+' <a href="'+link+'" target="_blank" style="display:'+display+'"><i class="fa fa-info-circle"></i></a>',
       Filed_On: formatStrToDteTimeStr(item.clientClaims.createTS),
       // Status: 'Filing Preparation',
       //final_approval_hearing: formatStrToDteTimeStr(sett.settlement_timeline.dateValue, true),

@@ -169,6 +169,7 @@ header nav {
     list-style: none;
     margin: 0;
     padding: 0 0 0 10px;
+    display: none;
 }
 
 .site-nav ul a {
@@ -2002,6 +2003,14 @@ p, .table, .alert, .carousel {
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    /* .site-nav li > ul {
+        display:none;
+    } */
+
+    /* .site-nav-sub + ul{
+        display:none;
+    } */
 }
 
 /* Medium devices, Desktops (>991px) */

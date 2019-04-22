@@ -135,10 +135,10 @@
 <section id="howitworks" class="site-content site-section site-slide-content">
     <div class="container pt50">
         <div class="row">
-            <div class="col-sm-6 site-block visibility-none img-mt-40" data-toggle="animation-appear" data-animation-class="animation-fadeInRight" data-element-offset="-180">
+            <div class="col-sm-6 site-block img-mt-40" data-toggle="animation-appear" data-animation-class="animation-fadeInRight" data-element-offset="-180">
                 <img src="/img/FIND.FILE.FUND.png" alt="How it Works" class="img-responsive rounded-corners">
             </div>
-            <div class="col-sm-6 col-md-5 col-md-offset-1 site-block visibility-none mt-neg50 m-mt-none" data-toggle="animation-appear" data-animation-class="animation-fadeInLeft" data-element-offset="-180">
+            <div class="col-sm-6 col-md-5 col-md-offset-1 site-block mt-neg50 m-mt-none" data-toggle="animation-appear" data-animation-class="animation-fadeInLeft" data-element-offset="-180">
                 <h3 class="h2 site-heading site-heading-promo">
                     <span class="text-theme-dark-navy">
                         <strong>How It Works</strong>

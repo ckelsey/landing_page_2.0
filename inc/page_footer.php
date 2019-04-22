@@ -176,3 +176,50 @@
 </div>
 
 <a href="#" id="to-top"><i class="fa fa-angle-up"></i></a>
+<script>
+    document.getElementById("support").addEventListener("mouseenter", myFunction);
+   function myFunction () {
+        var a = document.getElementById("support").nextSibling;
+        a.nextSibling.addEventListener("mouseenter", myFunction3);
+        function myFunction3 () 
+        {
+            a.nextSibling.style.display = "block";
+        }
+        a.nextSibling.addEventListener("mouseleave", myFunction4);
+        function myFunction4 () 
+        {
+            a.nextSibling.style.display = "none";
+        }
+        a.nextSibling.style.display = "block";
+    }
+
+    document.getElementById("support").addEventListener("mouseleave", myFunction2);
+    function myFunction2 () {
+            var a = document.getElementById("support").nextSibling;
+            a.nextSibling.style.display = "none";
+        }
+</script>
+<script>
+    document.getElementById("login").addEventListener("mouseenter", myFunction);
+   function myFunction () {
+        var a = document.getElementById("login").nextSibling;
+        console.log(a);
+        a.nextSibling.addEventListener("mouseenter", myFunction3);
+        function myFunction3 () 
+        {
+            a.nextSibling.style.display = "block";
+        }
+        a.nextSibling.addEventListener("mouseleave", myFunction4);
+        function myFunction4 () 
+        {
+            a.nextSibling.style.display = "none";
+        }
+        a.nextSibling.style.display = "block";
+    }
+
+    document.getElementById("login").addEventListener("mouseleave", myFunction2);
+    function myFunction2 () {
+            var a = document.getElementById("support").nextSibling;
+            a.nextSibling.style.display = "none";
+        }
+</script>        

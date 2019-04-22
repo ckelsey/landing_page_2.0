@@ -117,8 +117,6 @@
     </script>
     <noscript><img height="1" width="1" style="display:none" src="https://q.quora.com/_/ad/f8e9573a85dd404b98f4cf2c60afeb37/pixel?tag=ViewContent&noscript=1"/></noscript>
     <!-- End of Quora Pixel Code -->
-
-
 <!-- Page Container -->
 <!-- In the PHP version you can set the following options from inc/config file -->
 <!-- 'boxed' class for a boxed layout -->
@@ -210,7 +208,7 @@
                     
                     ?>
                     <li>
-                    <a href="javascript:void(0)" class="site-nav-sub">Support<i class="fa fa-angle-down site-nav-arrow"></i></a>
+                    <a href="javascript:void(0)" id="support" class="site-nav-sub">Support<i class="fa fa-angle-down site-nav-arrow"></i></a>
                         <ul>
                             <li>
                                 <a href="/faq/">FAQ</a>
@@ -234,7 +232,7 @@
                         <?php
                         if(isset($_SESSION['FULLNAME'])) {
                         ?>
-                        <a href="javascript:void(0)" class="site-nav-sub"><?= $_SESSION['FULLNAME'] ?><i class="fa fa-angle-down site-nav-arrow"></i></a>
+                        <a id="login" href="javascript:void(0)" class="site-nav-sub"><?= $_SESSION['FULLNAME'] ?><i class="fa fa-angle-down site-nav-arrow"></i></a>
                         <ul>
                             <li>
                                 <a href="/clarence/?<?= base64_encode("bptkn=" . $_SESSION['TOKEN']) ?>">Find Settlements</a>
