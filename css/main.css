@@ -2181,7 +2181,6 @@ only screen and (min-device-pixel-ratio: 1.5) {
   Front Page Animation
 -------------------------------------------*/
 
-
 #header-animation {
     width: 100%;
     height: 0px;
@@ -2310,14 +2309,15 @@ only screen and (min-device-pixel-ratio: 1.5) {
 }
 
 #clarence-header-svg-container {
-    position: relative;
-    height: 0px;
-    background: #2c9bc9;
-    border-radius: 50%;
-    overflow: hidden;
-    width: 20%;
-    padding: 10% 0px;
-    border: 4px solid #25274d;
+        position: relative;
+        height: 0px;
+        background: #2c9bc9;
+        border-radius: 50%;
+        overflow: hidden;
+        width: calc(16% + 8px);
+        padding: 8% 0px;
+        border: 4px solid #25274d;
+        margin-top: 8px;
 }
 
 #clarence-header-svg {
