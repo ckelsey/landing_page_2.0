@@ -10,7 +10,7 @@
 ?>
 
 <script async src="//www.googletagmanager.com/gtag/js?id=UA-99628832-5"></script>
-<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-99628832-5', { 'send_page_view': false, 'anonymize_ip': true });</script>
+<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-99628832-5');</script>
 <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/db9cb1341159e67cd255c5f22/2b8777ff31190e1390c3ae53d.js");</script>
 <script>
     function uuidv4() {
