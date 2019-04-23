@@ -14,7 +14,7 @@
             <div class="col-sm-3 col-md-2 site-block">
                 
             </div>
-            <div class="col-sm-6 col-md-8 site-block">
+            <div class="col-sm-6 col-md-8 site-block" id="ticketmessage">
                 <h3 class="h3 site-heading"><strong>Submit a support ticket</strong> and we will get back to you soon.</h3>
                 <form action="#" id="form-ticket">
                     <div class="form-group">

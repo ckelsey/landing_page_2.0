@@ -50,7 +50,8 @@ var Ticket = function() {
                 submitHandler: function(theForm) {
                     App.postData('saveTicketInfo.php', $('#form-ticket').serialize(), false, null, 'application/x-www-form-urlencoded')
                     .then(data => {
-
+                        $('#form-ticket').hide();
+                        $('<p>Thank you for submitting your information!  We will be in contact soon.</p>').appendTo('#ticketmessage');
                     }).catch(data => {
 
                     });
