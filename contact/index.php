@@ -28,7 +28,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-8 site-block">
+            <div class="col-sm-6 col-md-8 site-block" id="message">
                 <h3 class="h2 site-heading"><strong>Contact</strong> Form</h3>
                 <form action="#" id="form-contact">
                     <div class="form-group">

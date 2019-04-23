@@ -50,9 +50,11 @@ var Contact = function() {
                 submitHandler: function(theForm) {
                     App.postData('saveContactInfo.php', $('#form-contact').serialize(), false, null, 'application/x-www-form-urlencoded')
                     .then(data => {
-
+                        console.log("Test");
+                        $('#form-contact').hide();
+                        $('<p>Thank you for submitting your information!  We will be in contact soon.</p>').appendTo('#message');
                     }).catch(data => {
-
+                        console.log("Test2");
                     });
                 }
             });

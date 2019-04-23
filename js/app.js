@@ -44,6 +44,12 @@ var App = function() {
         // Initialize Placeholder
         $('input, textarea').placeholder();
 
+        // Initialize Select2
+        $('.select-chosen').chosen({width: "100%"});
+
+        // Initialize Select2
+        $('.select-select2').select2();
+
         // Toggle animation class when an element appears with Jquery Appear plugin
         $('[data-toggle="animation-appear"]').each(function(){
             var $this       = $(this);
