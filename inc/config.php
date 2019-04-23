@@ -23,10 +23,10 @@ $primary_nav = array(
         'name'  => 'How it Works',
         'url'   => '/#howitworks'
     ),
-    array(
+    /*array(
         'name'  => 'Blog',
         'url'   => '/blog/'
-    ),
+    ),*/
     array(
         'name'  => 'Contact',
         'url'   => '/contact/'

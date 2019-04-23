@@ -177,7 +177,7 @@
             <div class="col-sm-6 col-md-5 col-md-offset-1 site-block visibility-none" data-toggle="animation-appear" data-animation-class="animation-fadeInLeft" data-element-offset="-180">
                 <h3 class="h2 site-heading site-heading-promo mt-neg40 m-mt-none"><strong>Donate Your Claims</strong></h3>
                 <p class="promo-content">
-                At your preference, Class Action can donate your claims to a charity of your choosing. By working with charity partners across the country, we not make not only a simpler, more transparent legal system, but also stronger and more resilient communities.
+                At your preference, Class Action can donate your claims to a charity of your choosing. By working with charity partners across the country, we not only make a simpler, more transparent legal system, but also stronger and more resilient communities.
                 </p>
             </div>
         </div>
