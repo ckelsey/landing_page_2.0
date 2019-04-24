@@ -49,7 +49,8 @@ var Login = function() {
 
                         App.postData('login.php', JSON.stringify({
                             email: $('#login-email').val(),
-                            pass: $('#login-password').val()
+                            pass: $('#login-password').val(),
+                            cai_uuid: sessionStorage.getItem("uid")
                         }), true, $('#errorDisp')).then(data => {
                             $('#theButton').html('<strong>Logged In</strong>');
                             $('#errorDisp').text('Login successful...').removeClass('alert-danger hidden').addClass('alert-success');

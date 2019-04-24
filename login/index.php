@@ -84,6 +84,6 @@ $email = isset($queryStr) ? base64_decode($queryStr) : '';
 
 <?php include '../inc/page_footer.php'; ?>
 <?php include '../inc/template_scripts.php'; ?>
-<script src="/js/pages/login.js"></script>
+<script src="/js/pages/login.js?v=1"></script>
 <script>$(function(){ Login.init(); });</script>
 <?php include '../inc/template_end.php'; ?>
