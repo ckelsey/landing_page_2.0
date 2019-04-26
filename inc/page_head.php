@@ -225,7 +225,7 @@
                         <a href="/login/" class="btn btn-primary">Log In</a>
                     </li>
                     <li>
-                        <a href="/clarence/" class="btn btn-success btn-start">Sign Up</a>
+                        <a href="javascript:void(0);" class="btn btn-success btn-start btn-signup">Sign Up</a>
                     </li>
                     <?php } else { ?>
                     <li>

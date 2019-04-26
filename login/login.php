@@ -11,7 +11,7 @@ if(isset($loginDetails)) {
   $loginData = CallAPI("POST", "https://webhooks.mongodb-stitch.com/api/client/v2.0/app/cai_auth-tgtyd/service/svc_cai_users/incoming_webhook/userLogin?secret=78174b9de7640e8b6277", array(
     "email" => $loginDetails->email,
     "password" => $loginDetails->pass,
-    "session_id" => "abc123"       //   <== replace with incoming_traffic ID once site is live
+    "session_id" => $loginDetails->cai_uuid
   ));
 
   if(!isValidJSON($loginData)) {

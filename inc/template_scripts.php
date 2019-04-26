@@ -47,4 +47,19 @@
     $('#legal-text-userAgree').removeClass('hidden');
     $('#legal-modal').modal();
   });
+
+  $('.btn-signup').on('click', (e) => {
+    e.preventDefault();
+    let queryStr = window.location.search;
+
+    if(queryStr != '') {
+        queryStr = queryStr.substring(1);
+        queryStr += '&r=cai&cai_uuid=' + cai_uuid;
+    } else {
+        queryStr = 'r=cai&cai_uuid=' + cai_uuid;
+    }
+
+    queryStr = window.btoa(queryStr);
+    window.location.href = '/clarence/?' + queryStr;
+  });
 </script>

@@ -149,7 +149,7 @@
                     <ul class="footer-nav list-inline">
                         <li><a href="/#whoweare">Company</a></li>
                         <li><a href="/contact/">Contact</a></li>
-                        <li><a href="/faq/">Blog</a></li>
+                        <li><a href="/faq/">FAQ</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-6 col-md-3">

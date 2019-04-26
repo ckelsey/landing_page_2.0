@@ -121,7 +121,7 @@
                                 <div class="header-text-item" id="header-text-clarence">He'd like to help you file and collect your claims
                                 </div>
                                 <div class="header-text-item" id="header-text-start-button">
-                                    <a href="/clarence/" class="btn btn-lg btn-success btn-start">Get Started</a>
+                                    <a href="javascript:void(0);" class="btn btn-lg btn-success btn-start btn-signup">Get Started</a>
                                 </div>
                             </div>
                         </div>
