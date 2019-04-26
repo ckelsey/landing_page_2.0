@@ -7,43 +7,24 @@ include '../inc/page_head.php';
 // var_dump($json);
 
 ?>
-
-<section class="site-content site-section" style="height:820px;background:#FFF;">
-  <div class="container" style="margin-top:75px;">
-    <div class="row mb30">
-      <div class="col-lg-5"></div>
-      <div class="col-lg-4">  
-        <img src="//v.fastcdn.co/t/4b059c2f/c0e5d780/1555940400-34436511-124x124-logo-size-icon-inver.jpg" style="margin-top: 0px;" alt="">
-      </div>
-      <div class="col-lg-4"></div>
-    </div>
-    <div class="row mb30">
-        <div class="col-lg-3"></div>  
-        <div class="col-lg-7">
-            <h2> &nbsp;Affected vehicles: Takata settlement</h2>
-        </div>    
-        <div class="col-md-2"></div>
-    </div>
-    <div class="row mt30">
-        <div class="col-lg-5"></div>  
-        <div class="col-lg-3">
-        <a href="/clarence/?" class="btn btn-lg btn-success btn-alt">File Your Claim</a>
-        </div>    
-        <div class="col-md-4"></div>
-    </div>
-    <div class="row mt30">
+<section class="site-section site-section-light site-section-top themed-background-default">
+        <div class="container">
+            <h1 class="text-center animation-slideDown">Takata Eligibility</h1>
+            <h2 class="h3 text-center animation-slideUp">Check your vehicles to see if they are eligible for Takata</h2>
+        </div>
+</section>
+<section class="site-content site-section" style="height:auto;background:#FFF;min-height:400px">
+  <div class="container" style="margin-top:15px;">
+    <div class="row">
         <form action="#" method="post" class="form-horizontal form-bordered" id="vehicle-form" onsubmit="return false;">
                                         <div class="form-group">
-                                            <label class="col-md-4 control-label" for="example-typeahead">Make</label>
-                                            <div class="col-md-6">
+                                            <!-- <label class="col-md-4 control-label" for="example-typeahead">Make</label> -->
+                                            <div class="col-md-4">
                                             <select id="makeSelect" name="make" class="select-chosen" data-placeholder="Choose a Make.." style="width: 250px;" onchange="changeMake(this)">
                                                         <option value="Value"></option>
                                             </select>            
                                             </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-md-4 control-label" for="example-typeahead">Model</label>
-                                            <div class="col-md-6">
+                                            <div class="col-md-4">
                                             <select id="model" name="model" class="select-chosen" data-placeholder="Choose a Model.." style="width: 250px;" multiple>
                                                         <option value="United States">Ford</option>
                                                         <option value="United Kingdom">Chevy</option>
@@ -53,13 +34,9 @@ include '../inc/page_head.php';
                                                         <option value="Algeria">Algeria</option>
                                                         <option value="American Samoa">American Samoa</option>
                                                         <option value="Andorra">Andorra</option>
-                                            </select>            
-                                            </div>
-
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-md-4 control-label" for="example-typeahead">Year</label>
-                                            <div class="col-md-6">
+                                            </select>     
+                                            </div>     
+                                            <div class="col-md-3">
                                             <select id="year" name="year" class="select-chosen" data-placeholder="Choose an Year.." style="width: 250px;" multiple>
                                                         <option value="United States">Ford</option>
                                                         <option value="United Kingdom">Chevy</option>
@@ -69,15 +46,15 @@ include '../inc/page_head.php';
                                                         <option value="Algeria">Algeria</option>
                                                         <option value="American Samoa">American Samoa</option>
                                                         <option value="Andorra">Andorra</option>
-                                            </select>            
-                                            </div>
-                                            <div class="col-md-2">
-                                                <button type="button" class="btn btn-sm btn-danger" onclick="addClick()">Add</button>    
+                                            </select>
+                                            </div>    
+                                            <div class="col-md-1">
+                                            <button type="button" class="btn btn-success btn-start" onclick="addClick()">Add</button>    
                                             </div>
                                         </div>
-                                     <div class="row">
-                                         <div class="col-md-4"></div>
-                                         <div class="col-md-4">  
+                                     <div class="row mt30" id="resultsdiv">
+                                         <div class="col-md-3"></div>
+                                         <div class="col-md-5">  
                                             <div class="table-responsive">
                                                     <table id="vehicle-table" class="table table-striped table-vcenter">
                                                         <thead>
@@ -85,6 +62,7 @@ include '../inc/page_head.php';
                                                                 <th class="headFont">Make</th>
                                                                 <th class="headFont">Model</th>
                                                                 <th class="headFont">Year</th>
+                                                                <th class="headFont">Eligible</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
@@ -92,13 +70,18 @@ include '../inc/page_head.php';
                                                     </table>
                                               </div>
                                            </div> 
-                                           <div class="col-md-4"></div>
+                                           <div class="col-md-4">
+
+                                                <a href="/clarence/" class="btn btn-success btn-start" style="margin-top:10px;display:none;" id="file">File your claim</a>
+
+                                           </div>
                                         </div>
-                                        
-                                        <div class="form-group form-actions">
-                                            <div class="col-md-7 col-md-offset-5">
+                                        <div class="row"> 
+                                            <div class="col-md-12">
+                                               <div class="form-group form-actions mt30 text-center">
                                                 <button type="submit" class="btn btn-sm btn-primary" onclick="submitSearch()"><i class="fa fa-angle-right"></i> Search</button>
-                                                <button type="reset" class="btn btn-sm btn-warning" onclick="resetSearch()"><i class="fa fa-repeat"></i> Reset</button>
+                                                <button type="reset" class="btn btn-sm btn-info" onclick="resetSearch()"><i class="fa fa-repeat"></i> Reset</button>
+                                               </div>
                                             </div>
                                         </div>
                                     </form>
@@ -115,92 +98,143 @@ include '../inc/page_head.php';
 <?php include '../inc/page_footer.php'; ?>
 <?php include '../inc/template_scripts.php'; ?>
 <script>
-//   const claimData = JSON.parse();
-//   console.log(claimData);
-
-//   App.datatables();
-//   let data = Array();
-
-//   $.each(claimData.claimData, function(idx, item) {
-//     let sett = claimData.settsData.find(x => x.settlement_id == item.settlement_id);
-//     let edate = sett.settlement_timeline.find(x => x.dateName == 'Estimated Distribution Date');
-//     console.log(edate);
-//     if(edate==undefined)
-//     { edate = 'TBD'; } 
-//     console.log(edate.dateValue);
-//     let dateValue = edate.dateValue;
-//     const estPerItem = sett.CAA_calculations.est_amt_per_item;
-//     const darFlag = sett.CAA_calculations.use_claimData_for_DAR;
-//     let estValue = '$0.00';
-
-//     if(darFlag) {
-//       estValue = Object.keys(item.clientClaims.claimData).map(x => {
-//         return (parseFloat(item.clientClaims.claimData[x]) * estPerItem);
-//       }).reduce((partial_sum, a) => partial_sum + a).toFixed(2);
-//     } else {
-//       estValue = '$' + estPerItem.toLocaleString('en');
-//     }
-//     console.log(idx);
-//     let link="";
-//     display = "";
-//     if(sett.hasOwnProperty('settlement_doc_href')){
-//       link = sett.settlement_doc_href;
-//     }
-//     else {
-//       display = 'none';
-//     }
+     let obj = { data: [] };
+    function getVehiclesData() {
+  App.postData('https://webhooks.mongodb-stitch.com/api/client/v2.0/app/cai_auth-tgtyd/service/svc_admin_dash/incoming_webhook/getAvailVehicles?secret=9e2676d211803aa2014a',null, false, null)
+  .then(data => {
+        vehiclesData = JSON.parse(data);
+        let makeArray = []; let uniqueArray = []; let options = "";
     
-//     data.push({
-//       Settlement_Name: sett.settlement_client_name+' <a href="'+link+'" target="_blank" style="display:'+display+'"><i class="fa fa-info-circle"></i></a>',
-//       Filed_On: formatStrToDteTimeStr(item.clientClaims.createTS),
-//       // Status: 'Filing Preparation',
-//       //final_approval_hearing: formatStrToDteTimeStr(sett.settlement_timeline.dateValue, true),
-//       Estimated_Distribution_Date: formatStrToDteTimeStr(dateValue),
-//       Estimated_Value: '$' + estValue.toLocaleString('en')
-//     })
-    
-//   });
+        vehiclesData.forEach(element => {
+            makeArray.push(element.make);
+        });
 
-//   $('#claims-listing').DataTable({
-//     data: data,
-//     columnDefs: [
-//         { sClass: "text-center text-wrap", targets: [3] },
-//         { targets: '_all', orderable: true, createdCell: function (td, cellData, rowData, row, col) {
-//                 $(td).css('padding', '2px 10px')
-//                 if(col==2) {
-//                   $(td).css('text-align', 'center')
-//                 }
-//             }
-//         }
-//     ],
-//     columns: Object.keys(data[0]).map(x => {
-//         if (x === 'Estimated_Distribution_Date')
-//         {
-//           return {data:x, title: '<div class="text-center">Estimated <br/> Distribution Date</div>'};  
-//         }
-//         else {
-//           return {data:x, title: x.replace(/_/g," ")};
-//         }
+        uniqueArray = [...new Set(makeArray)]; 
         
-//     })
-//   });
+        $.each(uniqueArray, function(index, value){
+            options += '<option value= "' + value + '">' + value + '</option>';
+        }); 
+        $('#makeSelect').html(options);
+        $("#makeSelect").trigger("chosen:updated");
 
-//   function formatStrToDteTimeStr(strInput, bJustDate = false) {
-//     if(strInput == null) { return ''; }
+  }).catch(data => {
 
-//     let temp = moment(strInput);
+  });
+}
 
-//     if(bJustDate) {
-//       // return temp.format("MMM DD YYYY");
-//       return temp.format("MM/DD/YY");
-//     } else {
-//       // return temp.format("MMM DD YYYY hh:mm:ss a");
-//       return temp.format("MM/DD/YY");
-//     }
-//   }
+function changeMake(selectedObj) {
+        let modelArray = []; let uniqueModels = []; let yearArray = []; let uniqueYear = [];
+        vehiclesData.forEach(element => {
+            if(element.make === selectedObj.value) {
+                modelArray.push(element.model);
+                yearArray.push(element.year);
+            }
+        });
+        uniqueModels = [...new Set(modelArray)];
+        uniqueYear = [...new Set(yearArray)];
+        let modelOptions = ""; let yearOptions = "";
+        $.each(uniqueModels, function(index, value){
+            modelOptions += '<option value= "' + value + '">' + value + '</option>';
+        }); 
+        $.each(uniqueYear, function(index, value){
+            yearOptions += '<option value= "' + value + '">' + value + '</option>';
+        }); 
+        $('#model').html(modelOptions);
+        $("#model").trigger("chosen:updated");
+        $('#year').html(yearOptions);
+        $("#year").trigger("chosen:updated");
+}
 
-//   function capitalizeFirstLetter(string) {
-//     return string.charAt(0).toUpperCase() + string.slice(1);
-//   }
+jQuery(document).ready(function () {
+    getVehiclesData();
+    App.datatables();
+});
+
+function addClick () {
+        let make = $('#makeSelect').val();
+        let model = $('#model').val();
+        let year = $('#year').val();
+        let tdStrings = [];
+        
+        if(model && model.length > 0) {
+            model.forEach(element => {
+                if(year && year.length > 0) {
+                    year.forEach(item => {
+                        tdStrings.push("<tr><td>"+make+"</td><td>"+element+"</td><td>"+item+"</td></tr>");
+                        obj.data.push({"make":make,"model":element,"year":item});
+                    });
+                } else {
+                    tdStrings.push("<tr><td>"+make+"</td><td>"+element+"</td><td>&nbsp;</td></tr>");
+                    obj.data.push({"make":make,"model":element,"year":null});
+                }
+            });
+        } else {
+            tdStrings.push("<tr><td>"+make+"</td><td>&nbsp;</td><td>&nbsp;</td></tr>");
+            obj.data.push({"make":make,"model":null,"year":null});
+        }
+        $.each(tdStrings, function(index,value){
+                $("#vehicle-table tbody").prepend(value);
+        })
+
+        $('#makeSelect').val('').trigger('chosen:updated');
+        $('#model').val('').trigger('chosen:updated');
+        $('#year').val('').trigger('chosen:updated');
+
+}
+
+function submitSearch() {
+    console.log(obj);
+    App.postData('https://webhooks.mongodb-stitch.com/api/client/v2.0/app/cai_auth-tgtyd/service/svc_claims/incoming_webhook/checkTakataEligibility?secret=f98c8fc1ec4e87fbcf95',JSON.stringify(obj), false, null)
+            .then(data => {
+                let dataParse = JSON.parse(data);
+                console.log(dataParse);
+                $("#vehicle-table > tbody").html("");
+                if(dataParse.length > 0 || dataParse.length > 0) {
+                // $('#results').removeClass('hide');
+                let dataSet  = [];
+                dataParse.forEach(element => {
+                    if(element.eligible){
+                        dataSet.push({make:element.make,model:element.model,year:element.year,eligible:"<span class='text-center label label-success'>Yes</span>"});
+                        document.getElementById('file').style.display = "inline-block";
+                    }
+                    else {
+                      dataSet.push({make:element.make,model:element.model,year:element.year,eligible:"<span class='text-center label label-default'>No</span>"});
+                    }
+                    
+                });
+                if ($.fn.DataTable.isDataTable('#vehicle-table')) {
+                    $('#vehicle-table').DataTable().destroy();
+                    $('#vehicle-table').empty();
+                  }
+                $('#vehicle-table').DataTable( {
+                    data: dataSet,
+                   columnDefs: [
+                    {
+                        "targets": 3, // your case first column
+                        "className": "text-center",
+                    }],
+                    columns: [
+                        { title: "Make", data:"make"},
+                        { title: "Model", data:"model" },
+                        { title: "Year",data:"year" },
+                        { title: "Eligible", data:"eligible" }
+                    ]
+                } );
+
+                var clientHeight = document.getElementById('resultsdiv').clientHeight;
+                var fileHeight = clientHeight/2;
+                document.getElementById('file').style.marginTop = fileHeight+"px";
+
+            }
+
+            else {
+                alert('No Data Found');
+                $('#results-table').empty();
+            }
+            }).catch(data => {
+
+        });
+
+}
 </script>
 <?php include '../inc/template_end.php'; ?>
