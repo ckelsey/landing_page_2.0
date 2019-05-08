@@ -41,6 +41,7 @@ if(isAnyUserLoggedIn()) {
         <link rel="stylesheet" href="/css/main.css?v=<?= microtime(true) ?>">
         <link rel="stylesheet" href="/css/themes.css">
         <link rel="stylesheet" href="/css/styles.css?v=<?= microtime(true) ?>">
+        <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
         <!-- END Stylesheets -->
 
         <!-- Modernizr (browser feature detection library) -->
