@@ -1840,8 +1840,6 @@ p, .table, .alert, .carousel {
     background: #fff;
 }
 
-::-webkit-scrollbar-track {}
-
 ::-webkit-scrollbar-thumb {
     background: rgb(37, 39, 77);
 }
@@ -1860,6 +1858,11 @@ p, .table, .alert, .carousel {
     height: 0px;
     padding: 25% 0%;
     position: relative;
+    opacity: 0;
+}
+
+#header-animation.ready {
+    opacity: 1;
 }
 
 #header-animation-inner {
@@ -2014,6 +2017,29 @@ p, .table, .alert, .carousel {
 #header-text-start-button a {
     font-size: 16px;
     font-weight: bold;
+}
+
+/*
+=================================================================
+
+OPTION B FOR HEADER ANIMATION
+
+=================================================================
+*/
+
+.option-b #header-animation{
+    margin-bottom: 45px;
+    padding: 18% 0%;
+}
+
+.option-b #header-text-start-button{
+    position: absolute;
+    top: 99% !important;
+    opacity: 1 !important;
+}
+
+.option-b + #howitworks{
+    padding-top: 0px;
 }
 
 /*
@@ -2226,6 +2252,7 @@ MIT License
     width: 80px;
     margin-left: -40px;
     background: rgba(255, 255, 255, 0.9);
+    transform: scale(1);
     -webkit-transform: scale(1);
     border-radius: 8px;
     overflow: hidden;
@@ -2285,8 +2312,8 @@ MIT License
     border-bottom: 6px solid #be2626;
 }
 
-table.dataTable thead .sorting, 
-table.dataTable thead .sorting_asc, 
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
 table.dataTable thead .sorting_desc {
     background : none;
 }
