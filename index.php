@@ -2,7 +2,7 @@
 <?php include 'inc/template_start.php'; ?>
 <?php include 'inc/page_head.php'; ?>
 
-<div id="home-carousel">
+<div id="home-carousel" class="option-b">
     <div class="active item">
         <section class="site-section site-section-light site-section-top home-hdr pb0">
             <div class="container">
@@ -20,14 +20,14 @@
                                 <div id="header-text-hundreds" class="header-text-item">hundreds</div>
                                 <div id="header-text-settlements" class="header-text-item">of settlements</div>
                             </div>
-                    
+
                             <div id="header-text-group-3" class="header-text-group">
                                 <div id="header-text-and" class="header-text-item">and&nbsp;
                                     <span id="header-text-helps">helps</span></div>
                                 <div id="header-text-determine" class="header-text-item">determine your</div>
                                 <div id="header-text-eligibility" class="header-text-item">eligibility</div>
                             </div>
-                    
+
                             <div id="header-text-group-4" class="header-text-group">
                                 <div id="clarence-header-svg-container">
                                     <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" id="clarence-header-svg">
@@ -35,11 +35,11 @@
                                             .st1 {
                                                 fill: #895a2f
                                             }
-                    
+
                                             .st2 {
                                                 fill: #25274d
                                             }
-                    
+
                                             .st3 {
                                                 fill: none;
                                                 stroke: #25274d;
@@ -47,23 +47,23 @@
                                                 stroke-linecap: round;
                                                 stroke-linejoin: round
                                             }
-                    
+
                                             .st5 {
                                                 fill: #c5edfc
                                             }
-                    
+
                                             .st6 {
                                                 fill: #a9abb7
                                             }
-                    
+
                                             .st7 {
                                                 fill: #e2950f
                                             }
-                    
+
                                             .st8 {
                                                 fill: #f9bb2d
                                             }
-                    
+
                                         </style>
                                         <path
                                             d="M740.8 524.5s42.7-7.7 27.7-35.4c-29.5-54.7-92.2-274.2-92.2-274.2l-2-12.9c45.9-17.2 69.2-68.5 52-114.4s-68.5-69.2-114.4-52c-22.8 8.6-41.1 26.1-50.6 48.6 0 0-67.7-23.8-143-23.8h-33.7c-75.3 0-142.9 23.7-142.9 23.7-19.1-45.2-71.2-66.4-116.4-47.3S58.9 108 78 153.2c9.5 22.5 27.8 40.1 50.7 48.6l-2 12.9S64.1 434.2 34.6 488.9c-14.9 27.7 27.7 35.4 27.7 35.4s-7.9 39.3-30.4 63.7v10.5c86.3 105.6 217.6 173 364.6 173 152.3 0 287.7-72.3 373.8-184.5-21.8-24.5-29.5-62.5-29.5-62.5z"
@@ -125,7 +125,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>                    
+                    </div>
                 </div>
             </div>
         </section>
@@ -300,139 +300,147 @@
 <script src="js/pages/landing.js"></script>
 <?php include 'inc/template_end.php'; ?>
 <script>
-      var container = document.getElementById('header-animation-inner')
+    var container = document.getElementById('header-animation-inner')
 
-function resize() {
-    container.style.fontSize = Math.round(container.offsetHeight * 0.11112) + 'px'
-    container.style.lineHeight = Math.round(container.offsetHeight * 0.11112) + 'px'
-}
+    function resize() {
+        container.style.fontSize = Math.round(container.offsetHeight * 0.11112) + 'px'
+        container.style.lineHeight = Math.round(container.offsetHeight * 0.11112) + 'px'
+    }
 
-window.addEventListener('resize', resize, false)
-resize()
+    window.addEventListener('resize', resize, false)
+    resize()
 
-var spring = 'spring(0.5, 100, 10, 0)'
-var spring2 = 'spring(0.15, 100, 20, 0)'
+    var spring = 'spring(0.5, 100, 10, 0)'
+    var spring2 = 'spring(0.15, 100, 20, 0)'
 
-var timeline = anime.timeline({ autoplay: false })
+    var timeline = anime.timeline({ autoplay: false })
 
-var group1 = {
-    targets: '#header-text-group-1',
-    top: [{ value: ['-100%', 0], duration: 1000 }],
-    left: [
-        { value: 0, duration: 5500, easing: 'linear' },
-        { value: '-100%', duration: 1000 },
-    ],
-    opacity: [
-        { value: [0, 1], duration: 1000 },
-        { value: 1, duration: 5000, easing: 'linear' },
-        { value: [1, 0], duration: 500 }
-    ]
-}
+    var group1 = {
+        targets: '#header-text-group-1',
+        top: [{ value: ['-100%', 0], duration: 1000 }],
+        left: [
+            { value: 0, duration: 5500, easing: 'linear' },
+            { value: '-100%', duration: 1000 },
+        ],
+        opacity: [
+            { value: [0, 1], duration: 1000 },
+            { value: 1, duration: 5000, easing: 'linear' },
+            { value: [1, 0], duration: 500 }
+        ]
+    }
 
-var action = {
-    targets: '#header-text-action',
-    scaleY: [
-        { value: [0, 1], duration: 800 },
-        { value: 1, duration: 5000, easing: 'linear' },
-        { value: [1, 0], duration: 800 },
-    ],
-    left: [
-        { value: 0, duration: 5000, easing: 'linear' },
-        { value: '-100%', duration: 1000 },
-    ]
-}
+    var action = {
+        targets: '#header-text-action',
+        scaleY: [
+            { value: [0, 1], duration: 800 },
+            { value: 1, duration: 5000, easing: 'linear' },
+            { value: [1, 0], duration: 800 },
+        ],
+        left: [
+            { value: 0, duration: 5000, easing: 'linear' },
+            { value: '-100%', duration: 1000 },
+        ]
+    }
 
-var keeps = {
-    targets: '#header-text-keeps',
-    left: [
-        { value: ['150%', '0%'], duration: 500, easing: spring },
-        { value: 0, duration: 2000, easing: 'linear' },
-        { value: ['0%', '150%'], duration: 500, easing: spring }
-    ],
-    opacity: [
-        { value: [0, 1], duration: 200, easing: spring },
-        { value: [1, 0.9], duration: 2300, easing: 'linear' },
-        { value: [0.8, 0], duration: 100, easing: 'linear' },
-    ]
-}
+    var keeps = {
+        targets: '#header-text-keeps',
+        left: [
+            { value: ['150%', '0%'], duration: 500, easing: spring },
+            { value: 0, duration: 2000, easing: 'linear' },
+            { value: ['0%', '150%'], duration: 500, easing: spring }
+        ],
+        opacity: [
+            { value: [0, 1], duration: 200, easing: spring },
+            { value: [1, 0.9], duration: 2300, easing: 'linear' },
+            { value: [0.8, 0], duration: 100, easing: 'linear' },
+        ]
+    }
 
-var hundreds = {
-    targets: '#header-text-hundreds',
-    left: [
-        { value: ['150%', '0%'], duration: 500, easing: spring },
-        { value: 0, duration: 2000, easing: 'linear' },
-        { value: ['0%', '150%'], duration: 500, easing: spring }
-    ],
-    opacity: [
-        { value: [0, 1], duration: 200, easing: spring },
-        { value: [1, 0.9], duration: 2300, easing: 'linear' },
-        { value: [0.8, 0], duration: 100, easing: 'linear' },
-    ],
-    scaleY: [
-        { value: [0, 1], duration: 500, easing: spring },
-        { value: 1, duration: 2000, easing: 'linear' },
-        { value: [1, 0], duration: 2000, easing: spring }
-    ]
-}
+    var hundreds = {
+        targets: '#header-text-hundreds',
+        left: [
+            { value: ['150%', '0%'], duration: 500, easing: spring },
+            { value: 0, duration: 2000, easing: 'linear' },
+            { value: ['0%', '150%'], duration: 500, easing: spring }
+        ],
+        opacity: [
+            { value: [0, 1], duration: 200, easing: spring },
+            { value: [1, 0.9], duration: 2300, easing: 'linear' },
+            { value: [0.8, 0], duration: 100, easing: 'linear' },
+        ],
+        scaleY: [
+            { value: [0, 1], duration: 500, easing: spring },
+            { value: 1, duration: 2000, easing: 'linear' },
+            { value: [1, 0], duration: 2000, easing: spring }
+        ]
+    }
 
-var and = {
-    targets: '#header-text-and',
-    left: [
-        { value: ['150%', '0%'], duration: 500, easing: spring },
-        { value: 0, duration: 2000, easing: 'linear' },
-        { value: ['0%', '150%'], duration: 500, easing: spring }
-    ],
-    opacity: [
-        { value: [0, 1], duration: 200, easing: spring },
-        { value: [1, 0.9], duration: 2300, easing: 'linear' },
-        { value: [0.8, 0], duration: 100, easing: 'linear' },
-    ]
-}
+    var and = {
+        targets: '#header-text-and',
+        left: [
+            { value: ['150%', '0%'], duration: 500, easing: spring },
+            { value: 0, duration: 2000, easing: 'linear' },
+            { value: ['0%', '150%'], duration: 500, easing: spring }
+        ],
+        opacity: [
+            { value: [0, 1], duration: 200, easing: spring },
+            { value: [1, 0.9], duration: 2300, easing: 'linear' },
+            { value: [0.8, 0], duration: 100, easing: 'linear' },
+        ]
+    }
 
-var helps = {
-    targets: '#header-text-helps',
-    top: [-500, 0],
-    opacity: [0, 1],
-    duration: 500,
-    easing: spring
-}
+    var helps = {
+        targets: '#header-text-helps',
+        top: [-500, 0],
+        opacity: [0, 1],
+        duration: 500,
+        easing: spring
+    }
 
-var svg = {
-    targets: '#clarence-header-svg-container',
-    top: [500, 0],
-    opacity: [0, 1],
-    duration: 500,
-    easing: spring
-}
+    var svg = {
+        targets: '#clarence-header-svg-container',
+        top: [500, 0],
+        opacity: [0, 1],
+        duration: 500,
+        easing: spring
+    }
 
-var clarence = {
-    targets: '#clarence-header-svg-container svg',
-    top: [500, '12%'],
-    opacity: [0, 1],
-    duration: 500,
-    easing: spring2
-}
+    var clarence = {
+        targets: '#clarence-header-svg-container svg',
+        top: [500, '12%'],
+        opacity: [0, 1],
+        duration: 500,
+        easing: spring2
+    }
 
-timeline
-    .add(group1, 100)
-    .add(action, 350)
-    .add(Object.assign(action, { targets: '#header-text-inc' }), 450)
-    .add(keeps, 600)
-    .add(hundreds, 700)
-    .add(Object.assign(hundreds, { targets: '#header-text-settlements' }), 750)
-    .add(Object.assign(keeps, { targets: '#header-text-and' }), 3000)
-    .add(helps, 3300)
-    .add(Object.assign(hundreds, { targets: '#header-text-determine' }), 3100)
-    .add(Object.assign(hundreds, { targets: '#header-text-eligibility' }), 3150)
-    .add(svg, 5900)
-    .add(clarence, 6000)
-    .add(Object.assign(svg, { targets: '#header-text-meet-clarence' }), 6100)
-    .add(Object.assign(svg, { targets: '#header-text-clarence' }), 6200)
-    .add(Object.assign(svg, { 
-        targets: '#header-text-start-button',
-        complete: function(){
-            document.getElementById('header-text-start-button').style.pointerEvents = 'all'
+    setTimeout(function(){
+        var wrapper = document.getElementById('header-animation')
+
+        if(wrapper){
+            wrapper.classList.add('ready')
         }
-    }), 6300)
-    .play()
+    }, 100)
+
+    timeline
+        .add(group1, 100)
+        .add(action, 350)
+        .add(Object.assign(action, { targets: '#header-text-inc' }), 450)
+        .add(keeps, 600)
+        .add(hundreds, 700)
+        .add(Object.assign(hundreds, { targets: '#header-text-settlements' }), 750)
+        .add(Object.assign(keeps, { targets: '#header-text-and' }), 3000)
+        .add(helps, 3300)
+        .add(Object.assign(hundreds, { targets: '#header-text-determine' }), 3100)
+        .add(Object.assign(hundreds, { targets: '#header-text-eligibility' }), 3150)
+        .add(svg, 5900)
+        .add(clarence, 6000)
+        .add(Object.assign(svg, { targets: '#header-text-meet-clarence' }), 6100)
+        .add(Object.assign(svg, { targets: '#header-text-clarence' }), 6200)
+        .add(Object.assign(svg, {
+            targets: '#header-text-start-button',
+            complete: function(){
+                document.getElementById('header-text-start-button').style.pointerEvents = 'all'
+            }
+        }), 6300)
+        .play()
 </script>
