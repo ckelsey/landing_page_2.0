@@ -2,7 +2,8 @@
 include '../inc/config.php'; 
 
 $queryStr = parse_url($_SERVER["REQUEST_URI"], PHP_URL_QUERY);
-$email = isset($queryStr) ? base64_decode($queryStr) : '';
+//$email = isset($queryStr) ? base64_decode($queryStr) : '';
+$email = ($_GET['email']) ? $_GET['email'] : '';
 ?>
 <?php include '../inc/template_start.php'; ?>
 <?php include '../inc/page_head.php'; ?>
