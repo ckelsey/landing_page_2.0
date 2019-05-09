@@ -240,6 +240,9 @@
                             <li>
                                 <a href="/claims/listing/">My Claims</a>
                             </li>
+                            <li>
+                                <a href="/takata/">Vehicle Check</a>
+                            </li>
                             <!--<li>
                                 <a href="/yodlee/web/">My Accounts</a>
                             </li>-->
