@@ -2036,6 +2036,7 @@ OPTION B FOR HEADER ANIMATION
     position: absolute;
     top: 99% !important;
     opacity: 1 !important;
+    pointer-events: all;
 }
 
 .option-b + #howitworks{
